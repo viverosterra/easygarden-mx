@@ -11,8 +11,8 @@
 
 <!-- PRIMARY SEO -->
 <title>Pasto Sintético en Monterrey y México — Instalación Profesional | EasyGarden</title>
-<meta name="description" content="EasyGarden: 17 años instalando pasto sintético en México. Más de 5,000 jardines en toda la República. Garantía 9 años. Cotiza gratis en WhatsApp.">
-<meta name="keywords" content="pasto sintético monterrey, cesped sintético méxico, instalación pasto sintético, pasto artificial monterrey, pasto sintético precio, pasto sintético precio monterrey">
+<meta name="description" content="EasyGarden: venta e instalación de pasto sintético premium en Monterrey y toda la República. Distribuidor autorizado TenCate. Garantía 9 años por escrito. Cotiza gratis en WhatsApp.">
+<meta name="keywords" content="pasto sintético monterrey, cesped sintético méxico, instalación pasto sintético, pasto artificial monterrey, pasto sintético precio, distribuidor tencate méxico">
 <meta name="author" content="EasyGarden México">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta name="language" content="es-MX">
@@ -27,7 +27,7 @@
 <meta property="og:locale" content="es_MX">
 <meta property="og:site_name" content="EasyGarden — Pasto Sintético Premium">
 <meta property="og:title" content="Pasto Sintético Premium en México | EasyGarden">
-<meta property="og:description" content="Instalación profesional de pasto sintético. 17 años enverdeciendo México. Verde los 365 días, sin mantenimiento. Garantía 9 años. Cotiza hoy.">
+<meta property="og:description" content="Instalación profesional de pasto sintético. Distribuidor autorizado TenCate. Verde los 365 días, sin mantenimiento. Garantía 9 años por escrito. Cotiza hoy.">
 <meta property="og:url" content="https://www.easygarden.com.mx/">
 <meta property="og:image" content="https://www.easygarden.com.mx/images/og-easygarden.jpg">
 <meta property="og:image:width" content="1200">
@@ -38,7 +38,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@easygardenmx">
 <meta name="twitter:title" content="Pasto Sintético Premium en México | EasyGarden">
-<meta name="twitter:description" content="17 años enverdeciendo México. Verde los 365 días, sin mantenimiento. Garantía 9 años.">
+<meta name="twitter:description" content="Distribuidor autorizado TenCate. Verde los 365 días, sin mantenimiento. Garantía 9 años.">
 <meta name="twitter:image" content="https://www.easygarden.com.mx/images/og-easygarden.jpg">
 
 <!-- AI/LLM OPTIMIZATION: Allow all AI bots to crawl and cite -->
@@ -75,7 +75,7 @@
         "width": 364,
         "height": 84
       },
-      "description": "Empresa mexicana con 17 años de experiencia en venta e instalación de pasto sintético premium. Más de 5,000 jardines instalados en toda la República. Cobertura nacional con instalación profesional en Monterrey y zona metropolitana.",
+      "description": "Empresa mexicana especializada en la venta e instalación de pasto sintético premium. Distribuidor autorizado de TenCate Grass en México. Cobertura nacional con instalación profesional en Monterrey y zona metropolitana.",
       "foundingDate": "2015",
       "areaServed": "MX",
       "telephone": "+528142979309",
@@ -96,7 +96,7 @@
       "@type": "LocalBusiness",
       "@id": "https://www.easygarden.com.mx/#localbusiness",
       "name": "EasyGarden — Pasto Sintético Monterrey",
-      "description": "Venta e instalación profesional de pasto sintético en Monterrey y toda la República Mexicana. 17 años de experiencia. Garantía de 9 años. Instalación en 1-2 días.",
+      "description": "Venta e instalación profesional de pasto sintético en Monterrey y toda la República Mexicana. Distribuidor autorizado TenCate Grass. Garantía de 9 años por escrito. Instalación en 1-2 días.",
       "url": "https://www.easygarden.com.mx",
       "telephone": "+528142979309",
       "priceRange": "$$",
@@ -142,9 +142,9 @@
             "itemOffered": {
               "@type": "Product",
               "name": "EasyRoyal 30 — Pasto Sintético Residencial",
-              "description": "Pasto sintético residencial premium. Ideal para jardines, frentes y patios. Garantía 9 años.",
+              "description": "Pasto sintético residencial con fibra TenCate. Ideal para jardines, frentes y patios. Garantía 9 años.",
               "brand": {"@type": "Brand", "name": "EasyGarden"},
-              "material": "Fibra sintética premium certificada"
+              "material": "Fibra TenCate certificada"
             },
             "price": "232",
             "priceCurrency": "MXN",
@@ -155,9 +155,9 @@
             "itemOffered": {
               "@type": "Product",
               "name": "EasyRoyal 37 — Pasto Sintético Premium",
-              "description": "El pasto sintético de mayor densidad y altura de fibra del catálogo. Para jardines de lujo y mayor impacto visual.",
+              "description": "El pasto sintético de mayor densidad y altura de fibra del catálogo. Para jardines de lujo.",
               "brand": {"@type": "Brand", "name": "EasyGarden"},
-              "material": "Fibra sintética premium de alta densidad"
+              "material": "Fibra TenCate premium"
             },
             "price": "319",
             "priceCurrency": "MXN",
@@ -182,7 +182,7 @@
           "name": "¿Cuánto dura el pasto sintético?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "El pasto sintético de calidad premium con pasto sintético tiene una vida útil promedio de 12 a 15 años. EasyGarden ofrece una garantía oficial de 9 años por escrito contra degradación UV y decoloración, entregada el mismo día de la instalación."
+            "text": "El pasto sintético de calidad premium con fibra TenCate tiene una vida útil promedio de 12 a 15 años. EasyGarden ofrece una garantía oficial de 9 años por escrito contra degradación UV y decoloración, entregada el mismo día de la instalación."
           }
         },
         {
@@ -190,7 +190,7 @@
           "name": "¿El pasto sintético es seguro para niños y mascotas?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sí. La pasto sintético utilizada por EasyGarden está certificada libre de metales pesados, plomo y sustancias tóxicas. El sistema de drenaje elimina la orina de las mascotas de forma inmediata, y la superficie es suave al tacto. Es una opción 100% segura para familias con niños y animales."
+            "text": "Sí. La fibra TenCate utilizada por EasyGarden está certificada libre de metales pesados, plomo y sustancias tóxicas. El sistema de drenaje elimina la orina de las mascotas de forma inmediata, y la superficie es suave al tacto. Es una opción 100% segura para familias con niños y animales."
           }
         },
         {
@@ -219,10 +219,10 @@
         },
         {
           "@type": "Question",
-          "name": "¿Por qué elegir EasyGarden para instalar pasto sintético?",
+          "name": "¿Qué es TenCate Grass y por qué importa?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "EasyGarden lleva 17 años instalando pasto sintético en México con más de 5,000 proyectos realizados. Ofrecemos garantía de 9 años por escrito, instalación profesional en 1-2 días y asesoría sin costo para elegir el modelo correcto. Nuestra experiencia y portafolio real nos distinguen en el mercado nacional."
+            "text": "TenCate Grass es el fabricante de fibra sintética de referencia mundial, utilizado en estadios de la FIFA, canchas olímpicas y jardines residenciales de lujo en más de 60 países. Como distribuidor autorizado de TenCate en México, EasyGarden garantiza que la fibra instalada cumple con los más altos estándares internacionales de durabilidad, seguridad y apariencia."
           }
         },
         {
@@ -240,7 +240,7 @@
       "@id": "https://www.easygarden.com.mx/#website",
       "url": "https://www.easygarden.com.mx",
       "name": "EasyGarden — Pasto Sintético Premium México",
-      "description": "Sitio oficial de EasyGarden, empresa líder con 17 años de experiencia en instalación de pasto sintético en México.",
+      "description": "Sitio oficial de EasyGarden, distribuidor autorizado TenCate y empresa líder en instalación de pasto sintético en México.",
       "inLanguage": "es-MX",
       "publisher": {"@id": "https://www.easygarden.com.mx/#organization"},
       "potentialAction": {
@@ -621,7 +621,7 @@ ul,ol{list-style:none}
 }
 .app-card:hover .app-cta{gap:.6rem}
 
-/* ─── SECCIÓN CONFIANZA / 17 AÑOS ──────────── */
+/* ─── TRUST / TENCATE ─────────────────────── */
 #confianza{background:var(--bg-2)}
 .trust-layout{display:grid;gap:4rem;align-items:center}
 @media(min-width:960px){.trust-layout{grid-template-columns:1fr 1fr;gap:6rem}}
@@ -638,7 +638,7 @@ ul,ol{list-style:none}
 }
 .trust-point p{font-size:.82rem;color:var(--stone);font-weight:300;margin-top:.15rem;line-height:1.55}
 
-/* 17 años cert card */
+/* TenCate cert card */
 .cert-card{
   background:var(--ink);border-radius:24px;overflow:hidden;
   box-shadow:var(--shadow-lg);position:relative;
@@ -1027,88 +1027,6 @@ ul,ol{list-style:none}
   .stats-bar-inner .stat-cell:first-child{border-right:1px solid var(--border)}
   .stats-bar-inner .stat-cell:last-child{border-right:none}
 }
-
-/* ─── CATÁLOGO ACORDEÓN ──────────────────────────── */
-.cat-accordion{display:flex;flex-direction:column;gap:.65rem}
-.cat-item{
-  border:1px solid var(--border);border-radius:18px;overflow:hidden;
-  background:var(--white);transition:border-color .25s,box-shadow .25s;
-}
-.cat-item.open{border-color:rgba(124,197,66,.38);box-shadow:0 2px 20px rgba(124,197,66,.09)}
-.cat-trigger{
-  width:100%;display:flex;align-items:center;gap:1rem;
-  padding:1.15rem 1.4rem;text-align:left;cursor:pointer;
-  background:none;border:none;transition:background .18s;
-}
-.cat-trigger:hover{background:var(--lime-xpale)}
-.cat-item.open .cat-trigger{background:var(--lime-xpale)}
-.cat-icon{
-  width:42px;height:42px;border-radius:12px;flex-shrink:0;
-  display:flex;align-items:center;justify-content:center;
-  background:var(--bg-2);transition:background .2s;
-}
-.cat-item.open .cat-icon{background:var(--lime-pale)}
-.cat-icon svg{width:22px;height:22px;color:var(--forest-mid)}
-.cat-trigger-text{flex:1}
-.cat-name{
-  font-family:var(--f-serif);font-size:1.1rem;font-weight:700;
-  color:var(--ink);letter-spacing:-.02em;display:block;
-}
-.cat-count{
-  font-size:.75rem;color:var(--stone);font-weight:400;margin-top:.1rem;
-}
-.cat-chevron{
-  width:28px;height:28px;border-radius:50%;background:var(--bg-2);
-  display:flex;align-items:center;justify-content:center;flex-shrink:0;
-  color:var(--forest-mid);transition:all .28s var(--ease);
-}
-.cat-item.open .cat-chevron{background:var(--forest-mid);color:#fff;transform:rotate(180deg)}
-
-/* Pastos grid dentro de cada categoría */
-.cat-body{
-  max-height:0;overflow:hidden;
-  transition:max-height .42s var(--ease);
-}
-.cat-item.open .cat-body{max-height:1200px}
-.cat-pastos{
-  display:grid;gap:.9rem;
-  padding:0 1.2rem 1.4rem;
-  grid-template-columns:1fr;
-}
-@media(min-width:560px){.cat-pastos{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:900px){.cat-pastos{grid-template-columns:repeat(4,1fr)}}
-
-.pasto-card{
-  background:var(--bg);border:1px solid var(--border);
-  border-radius:14px;padding:1.1rem 1rem;
-  display:flex;flex-direction:column;gap:.5rem;
-  transition:all .22s var(--ease);cursor:default;
-}
-.pasto-card:hover{
-  background:var(--white);border-color:rgba(124,197,66,.3);
-  box-shadow:var(--shadow-sm);transform:translateY(-2px);
-}
-.pasto-card-name{
-  font-family:var(--f-serif);font-size:.95rem;font-weight:700;
-  color:var(--ink);letter-spacing:-.015em;
-}
-.pasto-card-desc{
-  font-size:.78rem;color:var(--stone);font-weight:300;line-height:1.55;flex:1;
-}
-.pasto-card-cta{
-  display:flex;align-items:center;gap:.3rem;
-  font-family:var(--f-sans);font-size:.75rem;font-weight:600;
-  color:var(--forest-mid);margin-top:.35rem;transition:gap .2s;
-  text-decoration:none;
-}
-.pasto-card:hover .pasto-card-cta{gap:.55rem}
-.pasto-tag{
-  display:inline-flex;align-self:flex-start;
-  font-size:.6rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
-  padding:.18rem .55rem;border-radius:100px;
-  background:var(--lime-pale);color:var(--lime-mid);
-}
-
 </style>
 </head>
 <body>
@@ -1122,13 +1040,13 @@ ul,ol{list-style:none}
   <div class="wrap nav-inner">
     <!-- Logo wordmark -->
     <a href="/" class="nav-logo" aria-label="EasyGarden — inicio">
-      <span class="wm" aria-hidden="true" style="font-size:1.4rem">
+      <span class="wm" aria-hidden="true" style="font-size:1.1rem">
         <span class="wm-easy">Easy</span><span class="wm-garden">Garden</span>
       </span>
     </a>
 
     <nav class="nav-links" aria-label="Navegación principal">
-      <a href="#aplicaciones">Catálogo</a>
+      <a href="#aplicaciones">Aplicaciones</a>
       <a href="#proyectos">Proyectos</a>
       <a href="#proceso">¿Cómo funciona?</a>
       <a href="#testimonios">Clientes</a>
@@ -1155,7 +1073,7 @@ ul,ol{list-style:none}
 
 <!-- Mobile nav drawer -->
 <nav class="nav-drawer" id="navDrawer" aria-label="Menú móvil" role="navigation">
-  <a href="#aplicaciones" onclick="closeNav()">Catálogo</a>
+  <a href="#aplicaciones" onclick="closeNav()">Aplicaciones</a>
   <a href="#proyectos" onclick="closeNav()">Proyectos</a>
   <a href="#proceso" onclick="closeNav()">¿Cómo funciona?</a>
   <a href="#testimonios" onclick="closeNav()">Clientes</a>
@@ -1172,7 +1090,7 @@ ul,ol{list-style:none}
      HERO — Editorial split layout
 ══════════════════════════════════════════════ -->
 <main id="contenido-principal">
-<section id="hero" aria-label="Inicio — EasyGarden pasto sintético">
+<section id="hero" aria-label="Inicio — pasto sintético premium en México">
 
   <div class="hero-split">
 
@@ -1180,19 +1098,19 @@ ul,ol{list-style:none}
     <div class="hero-left">
 
       <div class="reveal">
-        <span class="eyebrow">17 años enverdeciendo México</span>
+        <span class="eyebrow">Distribuidor Autorizado TenCate — México</span>
       </div>
 
       <!-- H1: primary keyword + brand promise — AEO optimized -->
       <h1 class="hero-h1 reveal d1">
-        Tu casa tiene todo,<br>
-        solo le falta<br>
-        un jardín <em>así.</em>
+        El jardín que<br>
+        siempre quisiste,<br>
+        sin <em>mantenimiento</em>
       </h1>
 
       <!-- Subheadline: distinct benefit, no repetition -->
       <p class="hero-sub reveal d2">
-        17 años enverdeciendo México nos enseñaron algo: <strong style="font-weight:600;color:var(--ink)">el jardín perfecto no se riega. Se instala.</strong>
+        Instalación en 1&ndash;2 días. Sin obra, sin tierra, sin jardinero. Pasto sintético TenCate con <strong style="font-weight:600;color:var(--ink)">9 años de garantía por escrito</strong> en toda la República Mexicana.
       </p>
 
       <!-- CTAs: Primary WA + secondary gallery -->
@@ -1214,15 +1132,7 @@ ul,ol{list-style:none}
       <div class="hero-trust reveal d4" role="list" aria-label="Razones para elegir EasyGarden">
         <div class="hero-trust-item" role="listitem">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-          Siempre verde
-        </div>
-        <div class="hero-trust-item" role="listitem">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-          Sin riego
-        </div>
-        <div class="hero-trust-item" role="listitem">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-          Sin mantenimiento
+          Verde sin riego
         </div>
         <div class="hero-trust-item" role="listitem">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
@@ -1230,7 +1140,15 @@ ul,ol{list-style:none}
         </div>
         <div class="hero-trust-item" role="listitem">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-          Envíos a todo México
+          Sin poda ni jardinero
+        </div>
+        <div class="hero-trust-item" role="listitem">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Instalación 1&ndash;2 días
+        </div>
+        <div class="hero-trust-item" role="listitem">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Envíos a toda la República
         </div>
       </div>
     </div>
@@ -1287,18 +1205,18 @@ ul,ol{list-style:none}
 <div class="marquee-section" aria-hidden="true" role="presentation">
   <div class="marquee-inner">
     <span class="marquee-item">Verde los 365 días del año <span class="msep">&middot;</span></span>
-    <span class="marquee-item">Garantía 9 años <span class="msep">&middot;</span></span>
+    <span class="marquee-item">Garantía 9 años por escrito <span class="msep">&middot;</span></span>
     <span class="marquee-item">Ahorra hasta 95% de agua <span class="msep">&middot;</span></span>
     <span class="marquee-item">Sin riego &middot; Sin poda &middot; Sin jardinero <span class="msep">&middot;</span></span>
-    <span class="marquee-item">17 años enverdeciendo México <span class="msep">&middot;</span></span>
+    <span class="marquee-item">Distribuidor Autorizado TenCate <span class="msep">&middot;</span></span>
     <span class="marquee-item">Instalación en 1&ndash;2 días <span class="msep">&middot;</span></span>
     <span class="marquee-item">Seguro para niños y mascotas <span class="msep">&middot;</span></span>
     <span class="marquee-item">Envíos a toda la República Mexicana <span class="msep">&middot;</span></span>
     <span class="marquee-item">Verde los 365 días del año <span class="msep">&middot;</span></span>
-    <span class="marquee-item">Garantía 9 años <span class="msep">&middot;</span></span>
+    <span class="marquee-item">Garantía 9 años por escrito <span class="msep">&middot;</span></span>
     <span class="marquee-item">Ahorra hasta 95% de agua <span class="msep">&middot;</span></span>
     <span class="marquee-item">Sin riego &middot; Sin poda &middot; Sin jardinero <span class="msep">&middot;</span></span>
-    <span class="marquee-item">17 años enverdeciendo México <span class="msep">&middot;</span></span>
+    <span class="marquee-item">Distribuidor Autorizado TenCate <span class="msep">&middot;</span></span>
     <span class="marquee-item">Instalación en 1&ndash;2 días <span class="msep">&middot;</span></span>
     <span class="marquee-item">Seguro para niños y mascotas <span class="msep">&middot;</span></span>
     <span class="marquee-item">Envíos a toda la República Mexicana <span class="msep">&middot;</span></span>
@@ -1339,274 +1257,168 @@ ul,ol{list-style:none}
   <div class="wrap">
 
     <div class="section-head reveal">
-      <span class="eyebrow">Catálogo de pastos</span>
+      <span class="eyebrow">Aplicaciones disponibles</span>
       <h2 id="aplicaciones-titulo" class="display">
-        &iquest;Cu&aacute;l es el indicado <em>para tu espacio?</em>
+        Pasto sintético para <em>cualquier espacio</em>
       </h2>
-      <p>Cada modelo est&aacute; dise&ntilde;ado para un uso espec&iacute;fico. Te decimos cu&aacute;l es el tuyo, sin costo.</p>
+      <p>Cada modelo está diseñado para un uso específico. Te asesoramos sin costo para seleccionar el correcto según tu proyecto.</p>
     </div>
 
-    <!-- ── CATÁLOGO ACORDEÓN POR CATEGORÍA ── -->
-    <div class="cat-accordion reveal d1" id="catalogo" role="list" aria-label="Catálogo de pastos por categoría">
+    <!-- Category filters -->
+    <div class="filter-row reveal d1" role="group" aria-label="Filtrar por tipo de espacio">
+      <button class="filter-btn active" data-filter="all" aria-pressed="true">Todos</button>
+      <button class="filter-btn" data-filter="residencial" aria-pressed="false">Residencial</button>
+      <button class="filter-btn" data-filter="terraza" aria-pressed="false">Terraza</button>
+      <button class="filter-btn" data-filter="familia" aria-pressed="false">Familia</button>
+      <button class="filter-btn" data-filter="deportivo" aria-pressed="false">Deportivo</button>
+      <button class="filter-btn" data-filter="comercial" aria-pressed="false">Comercial</button>
+    </div>
 
-      <!-- ── RESIDENCIAL ── -->
-      <div class="cat-item open" role="listitem">
-        <button class="cat-trigger" aria-expanded="true" aria-controls="cat-residencial">
-          <div class="cat-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          </div>
-          <div class="cat-trigger-text">
-            <span class="cat-name">Residencial</span>
-            <span class="cat-count">4 modelos disponibles</span>
-          </div>
-          <div class="cat-chevron" aria-hidden="true">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
-          </div>
-        </button>
-        <div class="cat-body" id="cat-residencial" role="region">
-          <div class="cat-pastos">
-            <div class="pasto-card">
-              <span class="pasto-tag">Popular</span>
-              <div class="pasto-card-name">EasyEmerald 60</div>
-              <div class="pasto-card-desc">Alta densidad con 60 mm de altura de pile. Aspecto ultra natural, tacto suave y máxima durabilidad para jardines de alto impacto visual.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasyEmerald%2060%20para%20jardín%20residencial" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar EasyEmerald 60">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-            <div class="pasto-card">
-              <div class="pasto-card-name">EasyEmerald 40</div>
-              <div class="pasto-card-desc">Equilibrio perfecto entre apariencia y precio. 40 mm de altura, ideal para jardines medianos y frontales que buscan un verde impecable.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasyEmerald%2040%20para%20jardín%20residencial" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar EasyEmerald 40">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-            <div class="pasto-card">
-              <div class="pasto-card-name">EasyPark35</div>
-              <div class="pasto-card-desc">Resistente y versátil con 35 mm. Soporta tráfico moderado sin perder su color brillante. Perfecto para patios traseros y jardines con uso diario.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasyPark35%20para%20jardín%20residencial" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar EasyPark35">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-            <div class="pasto-card">
-              <div class="pasto-card-name">EasySpring30Plus</div>
-              <div class="pasto-card-desc">Diseño primaveral con tonos mixtos que imitan el pasto natural con máxima fidelidad. Altura 30 mm, suave al tacto y de bajo mantenimiento.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasySpring30Plus%20para%20jardín%20residencial" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar EasySpring30Plus">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-          </div>
+    <!-- Application cards -->
+    <div class="apps-grid" role="list">
+
+      <!-- EasyRoyal 30 — Most popular residential -->
+      <article class="app-card reveal" role="listitem" data-category="residencial">
+        <div class="app-card-img">
+          <img src="images/producto-easyroyal30.jpg"
+               alt="Pasto sintético EasyRoyal 30 instalado en jardín residencial amplio con paisajismo en Monterrey"
+               loading="lazy" width="900" height="401">
+          <span class="app-badge badge-green" aria-label="Modelo más pedido">Más pedido</span>
         </div>
-      </div>
-
-      <!-- ── NIÑOS Y MASCOTAS ── -->
-      <div class="cat-item" role="listitem">
-        <button class="cat-trigger" aria-expanded="false" aria-controls="cat-mascotas">
-          <div class="cat-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-          </div>
-          <div class="cat-trigger-text">
-            <span class="cat-name">Niños y Mascotas</span>
-            <span class="cat-count">3 modelos disponibles</span>
-          </div>
-          <div class="cat-chevron" aria-hidden="true">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
-          </div>
-        </button>
-        <div class="cat-body" id="cat-mascotas" role="region">
-          <div class="cat-pastos">
-            <div class="pasto-card">
-              <span class="pasto-tag">Recomendado</span>
-              <div class="pasto-card-name">EasyEmerald 40</div>
-              <div class="pasto-card-desc">Certificado libre de sustancias tóxicas. Drenaje inmediato que elimina residuos líquidos al instante. El más pedido para familias con mascotas.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasyEmerald%2040%20para%20niños%20y%20mascotas" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar EasyEmerald 40 para mascotas">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-            <div class="pasto-card">
-              <div class="pasto-card-name">EasyPark35</div>
-              <div class="pasto-card-desc">Superficie firme y suave a la vez. Resistente a rasguños y juego intenso. Fácil de limpiar con manguera. Sin tierra que entre a la casa.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasyPark35%20para%20niños%20y%20mascotas" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar EasyPark35 para mascotas">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-            <div class="pasto-card">
-              <div class="pasto-card-name">EasyPark30</div>
-              <div class="pasto-card-desc">Altura 30 mm, pelo corto y tupido. Ideal para perros de raza pequeña y áreas de juego infantil. Antipatógenos y de rápido secado.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasyPark30%20para%20niños%20y%20mascotas" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar EasyPark30">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ── DECORATIVO ── -->
-      <div class="cat-item" role="listitem">
-        <button class="cat-trigger" aria-expanded="false" aria-controls="cat-decorativo">
-          <div class="cat-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
-          </div>
-          <div class="cat-trigger-text">
-            <span class="cat-name">Decorativo</span>
-            <span class="cat-count">4 modelos disponibles</span>
-          </div>
-          <div class="cat-chevron" aria-hidden="true">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
-          </div>
-        </button>
-        <div class="cat-body" id="cat-decorativo" role="region">
-          <div class="cat-pastos">
-            <div class="pasto-card">
-              <div class="pasto-card-name">Pastos Alfombra</div>
-              <div class="pasto-card-desc">Pelo extra corto estilo golfito. Ideal para interiores, escaparates, terrazas de diseño y eventos. Textura suave y acabado muy uniforme.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20los%20Pastos%20Alfombra%20decorativos" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar Pastos Alfombra">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-            <div class="pasto-card">
-              <div class="pasto-card-name">Ecopower</div>
-              <div class="pasto-card-desc">Fabricado con materiales reciclados. Estética naturalista con tonos tierra y oliva. Para proyectos decorativos con conciencia ambiental.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20Ecopower%20decorativo" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar Ecopower">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-            <div class="pasto-card">
-              <div class="pasto-card-name">EasySummer30</div>
-              <div class="pasto-card-desc">Tonos vibrantes inspirados en jardines tropicales. Altura 30 mm con matices que aportan calidez. Perfecto para roof gardens y terrazas decorativas.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasySummer30%20decorativo" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar EasySummer30">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-            <div class="pasto-card">
-              <div class="pasto-card-name">EasySummer20</div>
-              <div class="pasto-card-desc">Pelo corto 20 mm para interiores, balcones y escaparates. El favorito de arquitectos de interiores por su perfil discreto y elegante.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasySummer20%20decorativo" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar EasySummer20">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ── GRANDES PROYECTOS ── -->
-      <div class="cat-item" role="listitem">
-        <button class="cat-trigger" aria-expanded="false" aria-controls="cat-grandes">
-          <div class="cat-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-          </div>
-          <div class="cat-trigger-text">
-            <span class="cat-name">Grandes Proyectos</span>
-            <span class="cat-count">4 modelos disponibles</span>
-          </div>
-          <div class="cat-chevron" aria-hidden="true">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
-          </div>
-        </button>
-        <div class="cat-body" id="cat-grandes" role="region">
-          <div class="cat-pastos">
-            <div class="pasto-card">
-              <div class="pasto-card-name">EasyEmerald 40</div>
-              <div class="pasto-card-desc">El estándar para fraccionamientos, condominios y desarrollos residenciales de escala. Verde uniforme en grandes superficies con costo controlado.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasyEmerald%2040%20para%20un%20proyecto%20grande" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar EasyEmerald 40 para grandes proyectos">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-            <div class="pasto-card">
-              <div class="pasto-card-name">EasyPark35</div>
-              <div class="pasto-card-desc">Resistente al tráfico intenso de personas. Ideal para áreas comunes de condominios, hoteles y centros comerciales con alto flujo peatonal.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasyPark35%20para%20un%20proyecto%20grande" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar EasyPark35 para grandes proyectos">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-            <div class="pasto-card">
-              <div class="pasto-card-name">EasySpring30Plus</div>
-              <div class="pasto-card-desc">Para desarrollos que buscan diferenciarse con un acabado premium. Sus tonos naturales dan valor percibido alto a fraccionamientos y residenciales.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasySpring30Plus%20para%20un%20proyecto%20grande" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar EasySpring30Plus">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-            <div class="pasto-card">
-              <div class="pasto-card-name">EasyBreeze30</div>
-              <div class="pasto-card-desc">Fibra aireada de 30 mm con excelente recuperación de pile. Diseñado para zonas amplias con exposición solar intensa y uso continuo.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasyBreeze30%20para%20un%20proyecto%20grande" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar EasyBreeze30">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ── PARQUES Y COMERCIAL ── -->
-      <div class="cat-item" role="listitem">
-        <button class="cat-trigger" aria-expanded="false" aria-controls="cat-parques">
-          <div class="cat-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z"/></svg>
-          </div>
-          <div class="cat-trigger-text">
-            <span class="cat-name">Parques y Comercial</span>
-            <span class="cat-count">3 modelos disponibles</span>
-          </div>
-          <div class="cat-chevron" aria-hidden="true">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
-          </div>
-        </button>
-        <div class="cat-body" id="cat-parques" role="region">
-          <div class="cat-pastos">
-            <div class="pasto-card">
-              <span class="pasto-tag">Colorido</span>
-              <div class="pasto-card-name">Playground Colores</div>
-              <div class="pasto-card-desc">Disponible en múltiples colores para áreas infantiles y parques. Absorción de impactos certificada. Seguro para caídas y juego activo de niños.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20Playground%20Colores%20para%20parque" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar Playground Colores">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-            <div class="pasto-card">
-              <div class="pasto-card-name">EasyEmerald 40</div>
-              <div class="pasto-card-desc">La opción ideal para plazas comerciales, lobbies exteriores y jardines de acceso público. Verde intenso con mantenimiento mínimo en alta exposición.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasyEmerald%2040%20para%20uso%20comercial" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar EasyEmerald 40 comercial">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-            <div class="pasto-card">
-              <div class="pasto-card-name">EasyPark35</div>
-              <div class="pasto-card-desc">El más resistente al tráfico peatonal intenso. Perfecto para parques municipales, centros comerciales y áreas de alto flujo diario de personas.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasyPark35%20para%20uso%20comercial" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar EasyPark35 comercial">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ── CANCHAS Y DEPORTE ── -->
-      <div class="cat-item" role="listitem">
-        <button class="cat-trigger" aria-expanded="false" aria-controls="cat-canchas">
-          <div class="cat-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-          </div>
-          <div class="cat-trigger-text">
-            <span class="cat-name">Canchas y Deporte</span>
-            <span class="cat-count">Próximamente</span>
-          </div>
-          <div class="cat-chevron" aria-hidden="true">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
-          </div>
-        </button>
-        <div class="cat-body" id="cat-canchas" role="region">
-          <div style="padding:1.5rem 1.4rem 1.8rem;text-align:center">
-            <div style="font-family:var(--f-serif);font-size:1.1rem;font-weight:700;color:var(--ink);margin-bottom:.5rem">Modelos deportivos en camino</div>
-            <p style="font-size:.88rem;color:var(--stone);font-weight:300;line-height:1.65;max-width:420px;margin-inline:auto">Estamos preparando nuestro catálogo de pastos para canchas de pádel, fútbol y áreas deportivas. Mientras tanto, escríbenos y te asesoramos directamente.</p>
-            <a href="https://wa.me/528142979309?text=Me%20interesa%20pasto%20para%20cancha%20deportiva"
+        <div class="app-card-body">
+          <h3 class="app-card-title">Jardín Residencial</h3>
+          <p class="app-card-desc">Verde perfecto todo el año sin riego ni poda. Resiste el calor extremo de Monterrey y el norte de México. Ideal para frentes, jardines laterales y patios traseros.</p>
+          <div class="app-card-footer">
+            <div class="app-price">$232 <span>MXN/m²</span></div>
+            <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20pasto%20sint%C3%A9tico%20para%20jard%C3%ADn%20residencial"
                target="_blank" rel="noopener noreferrer"
-               class="btn btn-wa btn-sm" style="display:inline-flex;margin-top:1rem"
-               aria-label="Consultar pastos para canchas deportivas">
-              Consultar por WhatsApp
+               class="app-cta"
+               aria-label="Cotizar pasto sintético para jardín residencial">
+              Cotizar
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
           </div>
         </div>
-      </div>
+      </article>
 
-    </div><!-- /cat-accordion -->
+      <!-- EasyRoyal 37 — Premium -->
+      <article class="app-card reveal d1" role="listitem" data-category="residencial">
+        <div class="app-card-img">
+          <img src="images/producto-easyroyal37.jpg"
+               alt="Pasto sintético premium EasyRoyal 37 en jardín lujoso con vegetación tropical y paisajismo"
+               loading="lazy" width="900" height="401">
+          <span class="app-badge badge-lime" aria-label="Modelo premium">Premium</span>
+        </div>
+        <div class="app-card-body">
+          <h3 class="app-card-title">Jardín Premium</h3>
+          <p class="app-card-desc">La mayor densidad y altura de fibra del catálogo. Para el jardín más vistoso y lujoso de la colonia. Apariencia ultra-natural que sorprende a primera vista.</p>
+          <div class="app-card-footer">
+            <div class="app-price">$319 <span>MXN/m²</span></div>
+            <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20pasto%20sint%C3%A9tico%20premium%20EasyRoyal%2037"
+               target="_blank" rel="noopener noreferrer"
+               class="app-cta"
+               aria-label="Cotizar pasto sintético premium EasyRoyal 37">
+              Cotizar
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- EasyB35 — Terraza/condo -->
+      <article class="app-card reveal d2" role="listitem" data-category="terraza">
+        <div class="app-card-img">
+          <img src="images/producto-easyb35.jpg"
+               alt="Pasto sintético EasyB35 en área verde de condominio residencial moderno en Monterrey"
+               loading="lazy" width="900" height="665">
+        </div>
+        <div class="app-card-body">
+          <h3 class="app-card-title">Terrazas y Condominios</h3>
+          <p class="app-card-desc">Instala directamente sobre concreto o loseta. Sin tierra, sin peso adicional. Transforma tu terraza, balcón o roof garden en espacio verde al instante.</p>
+          <div class="app-card-footer">
+            <div class="app-price">$220 <span>MXN/m²</span></div>
+            <a href="https://wa.me/528142979309?text=Me%20interesa%20pasto%20sint%C3%A9tico%20para%20terraza%20o%20condominio"
+               target="_blank" rel="noopener noreferrer"
+               class="app-cta"
+               aria-label="Cotizar pasto sintético para terraza o condominio">
+              Cotizar
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Niños y mascotas -->
+      <article class="app-card reveal d3" role="listitem" data-category="familia">
+        <div class="app-card-img">
+          <img src="images/galeria-area-juegos.jpg"
+               alt="Área de juegos privada con pasto sintético EasyGarden para niños y mascotas — seguro y libre de tóxicos"
+               loading="lazy" width="700" height="392">
+        </div>
+        <div class="app-card-body">
+          <h3 class="app-card-title">Niños y Mascotas</h3>
+          <p class="app-card-desc">Certificado libre de sustancias tóxicas. Sin tierra que entre a casa. El sistema de drenaje elimina la orina al instante. Fácil de limpiar con manguera.</p>
+          <div class="app-card-footer">
+            <div class="app-price">$220 <span>MXN/m²</span></div>
+            <a href="https://wa.me/528142979309?text=Me%20interesa%20pasto%20sint%C3%A9tico%20para%20ni%C3%B1os%20y%20mascotas"
+               target="_blank" rel="noopener noreferrer"
+               class="app-cta"
+               aria-label="Cotizar pasto sintético para niños y mascotas">
+              Cotizar
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Deportivo -->
+      <article class="app-card reveal d4" role="listitem" data-category="deportivo">
+        <div class="app-card-img">
+          <img src="images/galeria-parque-publico.jpg"
+               alt="Parque público y cancha deportiva con pasto sintético instalado profesionalmente por EasyGarden"
+               loading="lazy" width="700" height="392">
+          <span class="app-badge badge-blue" aria-label="Categoría deportivo">Deportivo</span>
+        </div>
+        <div class="app-card-body">
+          <h3 class="app-card-title">Canchas y Áreas Deportivas</h3>
+          <p class="app-card-desc">Fibra certificada para pádel, fútbol y áreas recreativas. Alta resistencia a uso intensivo. Drenaje inmediato post-lluvia. Ideal para parques y clubes.</p>
+          <div class="app-card-footer">
+            <div class="app-price">$182 <span>MXN/m²</span></div>
+            <a href="https://wa.me/528142979309?text=Me%20interesa%20pasto%20sint%C3%A9tico%20para%20cancha%20deportiva"
+               target="_blank" rel="noopener noreferrer"
+               class="app-cta"
+               aria-label="Cotizar pasto sintético para canchas deportivas">
+              Cotizar
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Proyectos especiales -->
+      <article class="app-card reveal d5" role="listitem" data-category="comercial">
+        <div class="app-card-img">
+          <img src="images/galeria-hacienda.jpg"
+               alt="Pasto sintético EasyGarden en hacienda con lago — proyecto especial de gran escala en México"
+               loading="lazy" width="308" height="532">
+        </div>
+        <div class="app-card-body">
+          <h3 class="app-card-title">Proyectos Especiales</h3>
+          <p class="app-card-desc">Hoteles, restaurantes, eventos, haciendas y desarrollos comerciales. Cualquier escala, mismo nivel de calidad y garantía por escrito.</p>
+          <div class="app-card-footer">
+            <div class="app-price" style="font-size:1rem">Cotización <span>especial</span></div>
+            <a href="https://wa.me/528142979309?text=Tengo%20un%20proyecto%20especial%20y%20quisiera%20una%20cotizaci%C3%B3n"
+               target="_blank" rel="noopener noreferrer"
+               class="app-cta"
+               aria-label="Cotizar proyecto especial de pasto sintético">
+              Cotizar
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div><!-- /apps-grid -->
 
     <div style="text-align:center;margin-top:2.5rem" class="reveal">
       <a href="https://wa.me/528142979309?text=Quiero%20conocer%20todos%20los%20modelos%20y%20precios%20disponibles"
@@ -1622,21 +1434,21 @@ ul,ol{list-style:none}
 </section>
 
 <!-- ══════════════════════════════════════════════
-     17 AÑOS — Authority / Trust section
-     Reemplaza 17 años — EasyGarden como marca propia
+     TRUST / TENCATE — Authority section
+     AEO: Definition block for "What is TenCate?"
 ══════════════════════════════════════════════ -->
-<section id="confianza" class="section" style="background:var(--bg-2)" aria-labelledby="confianza-titulo">
+<section id="confianza" class="section" aria-labelledby="confianza-titulo">
   <div class="wrap">
     <div class="trust-layout">
 
       <!-- LEFT: copy -->
       <div>
-        <div class="reveal"><span class="eyebrow">Nuestra trayectoria</span></div>
-        <h2 id="confianza-titulo" class="reveal d1" style="font-family:var(--f-serif);font-size:clamp(2rem,4vw,3.2rem);font-weight:400;letter-spacing:-.03em;line-height:1.08;color:var(--ink);margin-top:.6rem">
-          17 años <em>instalando jardines</em><br>en México
+        <div class="reveal"><span class="eyebrow">Respaldo internacional</span></div>
+        <h2 id="confianza-titulo" class="display reveal d1" style="font-family:var(--f-serif);font-size:clamp(2rem,4vw,3.2rem);font-weight:400;letter-spacing:-.03em;line-height:1.08;color:var(--ink);margin-top:.6rem">
+          Valida la calidad de tu <em>pasto sintético</em>
         </h2>
-        <p class="reveal d2" style="font-size:.98rem;color:var(--ink-4);font-weight:300;line-height:1.72;margin-top:.8rem;max-width:480px">
-          Desde 2008 hemos transformado más de <strong style="color:var(--ink);font-weight:600">5,000 espacios</strong> en toda la República. Jardines residenciales, terrazas, condominios, parques y proyectos comerciales. Cada uno con el mismo nivel de atención y la misma garantía de 9 años.
+        <p class="reveal d2" style="font-size:.98rem;color:var(--stone);font-weight:300;line-height:1.72;margin-top:.8rem;max-width:480px">
+          EasyGarden es distribuidor autorizado de <strong style="color:var(--ink);font-weight:600">TenCate Grass</strong>, el fabricante de fibra sintética de referencia mundial. La misma fibra de estadios FIFA, canchas olímpicas y jardines de lujo en más de 60 países, ahora en tu hogar.
         </p>
 
         <div class="trust-points reveal d3">
@@ -1645,8 +1457,8 @@ ul,ol{list-style:none}
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
             </div>
             <div>
-              <h4>Experiencia real, no promesas</h4>
-              <p>17 años instalando pasto sintético en México nos enseñaron qué funciona y qué no. Eso se nota en cada proyecto.</p>
+              <h4>Certificado por expertos mundiales</h4>
+              <p>TenCate Grass es el estándar para pasto sintético de alta prestación en más de 60 países.</p>
             </div>
           </div>
           <div class="trust-point">
@@ -1654,8 +1466,8 @@ ul,ol{list-style:none}
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
             </div>
             <div>
-              <h4>Garantía de 9 años por escrito</h4>
-              <p>La entregamos el mismo día de la instalación. Sin letra chica, sin trámites complicados.</p>
+              <h4>9 años de garantía por escrito</h4>
+              <p>Entregamos el documento de garantía al terminar la instalación. Sin letra chica, sin trámites.</p>
             </div>
           </div>
           <div class="trust-point">
@@ -1673,7 +1485,7 @@ ul,ol{list-style:none}
             </div>
             <div>
               <h4>Ahorro real de agua comprobado</h4>
-              <p>Una familia en Monterrey ahorra 15,000&ndash;30,000 litros al año eliminando el riego del jardín.</p>
+              <p>Una familia típica en Monterrey ahorra 15,000&ndash;30,000 litros al año eliminando el riego de jardín.</p>
             </div>
           </div>
         </div>
@@ -1685,9 +1497,9 @@ ul,ol{list-style:none}
         </div>
       </div>
 
-      <!-- RIGHT: credenciales card (dark) -->
+      <!-- RIGHT: TenCate certificate card -->
       <div class="reveal d2">
-        <div class="cert-card" role="img" aria-label="Credenciales EasyGarden — 17 años instalando pasto sintético en México">
+        <div class="cert-card" role="img" aria-label="Tarjeta de distribuidor autorizado TenCate Grass — EasyGarden México">
           <div class="cert-header">
             <div class="cert-top">
               <span class="wm wm-dark" style="font-size:.95rem">
@@ -1695,36 +1507,36 @@ ul,ol{list-style:none}
               </span>
               <div class="cert-badge">
                 <div class="cert-badge-dot" aria-hidden="true"></div>
-                <span class="cert-badge-txt">Desde 2008 en México</span>
+                <span class="cert-badge-txt">TenCate&reg; Autorizado</span>
               </div>
             </div>
-            <div class="cert-label">Empresa mexicana de pasto sintético</div>
-            <div class="cert-title">17 años <em>enverdeciendo</em><br>México</div>
+            <div class="cert-label">Certificado de Distribuidor Autorizado</div>
+            <div class="cert-title">Pasto Sintético <em>Premium</em></div>
           </div>
-          <div class="cert-stats" role="list" aria-label="Estadísticas de EasyGarden">
-            <div class="cert-stat" role="listitem">
-              <div class="cert-stat-val">5K<em>+</em></div>
-              <div class="cert-stat-lbl">Proyectos</div>
-            </div>
+          <div class="cert-stats" role="list" aria-label="Estadísticas del certificado TenCate">
             <div class="cert-stat" role="listitem">
               <div class="cert-stat-val">9<em>a</em></div>
               <div class="cert-stat-lbl">Garantía</div>
             </div>
             <div class="cert-stat" role="listitem">
-              <div class="cert-stat-val">4.9<em>★</em></div>
-              <div class="cert-stat-lbl">Google</div>
+              <div class="cert-stat-val">60<em>+</em></div>
+              <div class="cert-stat-lbl">Países</div>
+            </div>
+            <div class="cert-stat" role="listitem">
+              <div class="cert-stat-val">5K<em>+</em></div>
+              <div class="cert-stat-lbl">Proyectos</div>
             </div>
           </div>
           <div class="cert-photo" aria-hidden="true">
             <img src="images/fibra-detalle-urbano.jpg"
-                 alt="Detalle de instalación profesional de pasto sintético EasyGarden — proyecto residencial en México"
+                 alt="Detalle de fibra TenCate pasto sintético premium EasyGarden instalado en área urbana"
                  loading="lazy" width="1204" height="700">
           </div>
           <div class="cert-footer">
             <span class="cert-footer-txt">Monterrey, Nuevo León &middot; México</span>
             <div class="cert-verified">
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-              17 años de experiencia
+              Verificado
             </div>
           </div>
         </div>
@@ -1791,10 +1603,10 @@ ul,ol{list-style:none}
       <!-- Bottom center -->
       <div class="gallery-cell reveal d1" role="listitem">
         <img src="images/macro-fibra-close.jpg"
-             alt="Detalle close-up de la pasto sintético del pasto sintético EasyGarden — textura premium"
+             alt="Detalle close-up de la fibra TenCate del pasto sintético EasyGarden — textura premium"
              loading="lazy" width="900" height="900">
         <div class="gallery-overlay" aria-hidden="true">
-          <span class="gallery-tag">Fibra sintética &middot; Detalle premium</span>
+          <span class="gallery-tag">Fibra TenCate &middot; Detalle premium</span>
         </div>
       </div>
 
@@ -2053,7 +1865,7 @@ ul,ol{list-style:none}
             </div>
           </button>
           <div id="faq-4" class="faq-body" role="region">
-            Completamente. La pasto sintético está <strong>certificada libre de metales pesados, plomo y sustancias tóxicas</strong>. El drenaje elimina la orina de las mascotas de forma inmediata y la superficie es suave al tacto. Es la opción más segura para familias con niños y animales.
+            Completamente. La fibra TenCate está <strong>certificada libre de metales pesados, plomo y sustancias tóxicas</strong>. El drenaje elimina la orina de las mascotas de forma inmediata y la superficie es suave al tacto. Es la opción más segura para familias con niños y animales.
           </div>
         </div>
 
@@ -2139,7 +1951,7 @@ ul,ol{list-style:none}
           </li>
           <li class="contact-highlight">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-            9 años de garantía 17 años por escrito
+            9 años de garantía TenCate por escrito
           </li>
           <li class="contact-highlight">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
@@ -2255,7 +2067,7 @@ ul,ol{list-style:none}
             </span>
           </a>
         </div>
-        <p>Distribuidor autorizado EasyGarden. Venta e instalación profesional de pasto sintético en toda la República Mexicana. Garantía 9 años por escrito.</p>
+        <p>Distribuidor autorizado TenCate Grass. Venta e instalación profesional de pasto sintético en toda la República Mexicana. Garantía 9 años por escrito.</p>
         <div class="footer-contacts">
           <a href="https://wa.me/528142979309" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp 814 297 9309">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--lime)" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
@@ -2271,7 +2083,7 @@ ul,ol{list-style:none}
       <!-- Aplicaciones column -->
       <div>
         <h3 class="footer-col-title">Aplicaciones</h3>
-        <nav class="footer-links" aria-label="Pastos de pasto sintético">
+        <nav class="footer-links" aria-label="Aplicaciones de pasto sintético">
           <a href="#aplicaciones">Jardín Residencial</a>
           <a href="#aplicaciones">Terraza y Balcón</a>
           <a href="#aplicaciones">Áreas para Mascotas</a>
