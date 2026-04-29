@@ -1109,6 +1109,140 @@ ul,ol{list-style:none}
   background:var(--lime-pale);color:var(--lime-mid);
 }
 
+
+/* ─── CATÁLOGO PILLS + PHOTO CARDS ──────────────────────── */
+
+/* Pills container */
+.cat-pills{
+  display:flex;flex-wrap:wrap;gap:.5rem;
+  margin-bottom:2.25rem;
+}
+.cat-pill{
+  display:inline-flex;align-items:center;gap:.45rem;
+  font-family:var(--f-sans);font-size:.8rem;font-weight:600;
+  padding:.52rem 1.1rem;border-radius:100px;
+  border:1.5px solid var(--border-2);
+  background:transparent;color:var(--stone);
+  cursor:pointer;transition:all .2s var(--ease);
+  white-space:nowrap;
+}
+.cat-pill:hover{
+  border-color:var(--forest-mid);color:var(--forest-mid);
+  background:var(--lime-xpale);
+}
+.cat-pill.active{
+  background:var(--forest-mid);color:#fff;
+  border-color:var(--forest-mid);
+  box-shadow:0 2px 10px rgba(46,125,35,.25);
+}
+.cat-pill svg{width:14px;height:14px;flex-shrink:0}
+
+/* Products grid */
+.pasto-grid{
+  display:grid;gap:1.1rem;
+  grid-template-columns:1fr;
+}
+@media(min-width:480px){.pasto-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:900px){.pasto-grid{grid-template-columns:repeat(4,1fr)}}
+
+/* Category panel */
+.cat-panel{display:none}
+.cat-panel.active{
+  display:block;
+  animation:panelIn .28s var(--ease) both;
+}
+@keyframes panelIn{
+  from{opacity:0;transform:translateY(10px)}
+  to{opacity:1;transform:none}
+}
+
+/* Photo product card */
+.pasto-photo-card{
+  background:var(--white);border:1px solid var(--border);
+  border-radius:18px;overflow:hidden;
+  display:flex;flex-direction:column;
+  transition:all .25s var(--ease);
+  box-shadow:var(--shadow-sm);
+}
+.pasto-photo-card:hover{
+  transform:translateY(-4px);
+  box-shadow:var(--shadow-md);
+  border-color:rgba(124,197,66,.3);
+}
+
+/* Photo area */
+.pasto-photo{
+  position:relative;overflow:hidden;
+  aspect-ratio:4/3;background:var(--bg-2);
+}
+.pasto-photo img{
+  width:100%;height:100%;object-fit:cover;object-position:center top;
+  transition:transform .5s var(--ease);
+}
+.pasto-photo-card:hover .pasto-photo img{transform:scale(1.06)}
+
+/* No-image fallback */
+.pasto-photo-fallback{
+  width:100%;height:100%;
+  background:linear-gradient(135deg,var(--lime-xpale) 0%,var(--bg-2) 100%);
+  display:flex;align-items:center;justify-content:center;
+}
+.pasto-photo-fallback svg{
+  width:48px;height:48px;color:var(--lime-pale);
+}
+
+/* Badge over photo */
+.pasto-photo-badge{
+  position:absolute;top:.65rem;left:.65rem;
+  font-family:var(--f-sans);font-size:.6rem;font-weight:700;
+  letter-spacing:.06em;text-transform:uppercase;
+  padding:.22rem .65rem;border-radius:100px;
+  backdrop-filter:blur(8px);
+}
+.badge-popular{background:rgba(46,125,35,.88);color:#fff}
+.badge-recom{background:rgba(124,197,66,.92);color:var(--ink)}
+.badge-prox{background:rgba(14,26,14,.7);color:rgba(255,255,255,.8)}
+
+/* Card body */
+.pasto-photo-body{
+  padding:1.05rem;flex:1;display:flex;flex-direction:column;gap:.35rem;
+}
+.pasto-photo-name{
+  font-family:var(--f-serif);font-size:.98rem;font-weight:700;
+  color:var(--ink);letter-spacing:-.02em;line-height:1.2;
+}
+.pasto-photo-desc{
+  font-size:.77rem;color:var(--stone);font-weight:300;
+  line-height:1.55;flex:1;
+}
+.pasto-photo-footer{
+  display:flex;align-items:center;justify-content:space-between;
+  padding-top:.75rem;margin-top:.35rem;
+  border-top:1px solid var(--border);
+}
+.pasto-photo-cta{
+  display:inline-flex;align-items:center;gap:.3rem;
+  font-family:var(--f-sans);font-size:.75rem;font-weight:700;
+  color:var(--forest-mid);transition:gap .18s;text-decoration:none;
+}
+.pasto-photo-card:hover .pasto-photo-cta{gap:.55rem}
+.pasto-photo-cta svg{width:12px;height:12px}
+
+/* Canchas placeholder card */
+.cat-prox-card{
+  text-align:center;padding:2.5rem 1.5rem;
+  background:var(--white);border:1px dashed var(--border-2);
+  border-radius:18px;grid-column:1/-1;
+}
+.cat-prox-card h3{
+  font-family:var(--f-serif);font-size:1.1rem;font-weight:700;
+  color:var(--ink);margin-bottom:.5rem;
+}
+.cat-prox-card p{
+  font-size:.86rem;color:var(--stone);font-weight:300;
+  line-height:1.65;max-width:380px;margin-inline:auto;
+}
+
 </style>
 </head>
 <body>
@@ -1335,7 +1469,7 @@ ul,ol{list-style:none}
      APPLICATIONS — Service cards
      H2: keyword + use case targeting
 ══════════════════════════════════════════════ -->
-<section id="aplicaciones" class="section" aria-labelledby="aplicaciones-titulo">
+<section id="aplicaciones" class="section" style="background:var(--white)" aria-labelledby="aplicaciones-titulo">
   <div class="wrap">
 
     <div class="section-head reveal">
@@ -1346,274 +1480,407 @@ ul,ol{list-style:none}
       <p>Cada modelo est&aacute; dise&ntilde;ado para un uso espec&iacute;fico. Te decimos cu&aacute;l es el tuyo, sin costo.</p>
     </div>
 
-    <!-- ── CATÁLOGO ACORDEÓN POR CATEGORÍA ── -->
-    <div class="cat-accordion reveal d1" id="catalogo" role="list" aria-label="Catálogo de pastos por categoría">
+    <!-- PILLS -->
+    <div class="cat-pills reveal d1" role="tablist" aria-label="Filtrar pastos por categoría">
 
-      <!-- ── RESIDENCIAL ── -->
-      <div class="cat-item open" role="listitem">
-        <button class="cat-trigger" aria-expanded="true" aria-controls="cat-residencial">
-          <div class="cat-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <button class="cat-pill active" data-cat="residencial" role="tab" aria-selected="true" aria-controls="panel-residencial">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        Residencial
+      </button>
+
+      <button class="cat-pill" data-cat="mascotas" role="tab" aria-selected="false" aria-controls="panel-mascotas">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        Ni&ntilde;os y Mascotas
+      </button>
+
+      <button class="cat-pill" data-cat="decorativo" role="tab" aria-selected="false" aria-controls="panel-decorativo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
+        Decorativo
+      </button>
+
+      <button class="cat-pill" data-cat="grandes" role="tab" aria-selected="false" aria-controls="panel-grandes">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        Grandes Proyectos
+      </button>
+
+      <button class="cat-pill" data-cat="parques" role="tab" aria-selected="false" aria-controls="panel-parques">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z"/></svg>
+        Parques y Comercial
+      </button>
+
+      <button class="cat-pill" data-cat="canchas" role="tab" aria-selected="false" aria-controls="panel-canchas">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        Canchas y Deporte
+      </button>
+
+    </div><!-- /pills -->
+
+    <!-- ══ PANEL: RESIDENCIAL ══ -->
+    <div class="cat-panel active" id="panel-residencial" role="tabpanel" aria-labelledby="pill-residencial">
+      <div class="pasto-grid">
+
+        <article class="pasto-photo-card reveal">
+          <div class="pasto-photo">
+            <img src="images/easyemerald60.jpg"
+                 alt="Pasto sintético EasyEmerald 60 — alta densidad 60mm para jardín residencial premium"
+                 loading="lazy" width="800" height="600">
+            <span class="pasto-photo-badge badge-popular">Popular</span>
           </div>
-          <div class="cat-trigger-text">
-            <span class="cat-name">Residencial</span>
-            <span class="cat-count">4 modelos disponibles</span>
-          </div>
-          <div class="cat-chevron" aria-hidden="true">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
-          </div>
-        </button>
-        <div class="cat-body" id="cat-residencial" role="region">
-          <div class="cat-pastos">
-            <div class="pasto-card">
-              <span class="pasto-tag">Popular</span>
-              <div class="pasto-card-name">EasyEmerald 60</div>
-              <div class="pasto-card-desc">Alta densidad con 60 mm de altura de pile. Aspecto ultra natural, tacto suave y máxima durabilidad para jardines de alto impacto visual.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasyEmerald%2060%20para%20jardín%20residencial" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar EasyEmerald 60">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          <div class="pasto-photo-body">
+            <div class="pasto-photo-name">EasyEmerald 60</div>
+            <div class="pasto-photo-desc">Alta densidad con 60mm de altura de pile. Aspecto ultra natural, tacto suave y máxima durabilidad para jardines de alto impacto visual.</div>
+            <div class="pasto-photo-footer">
+              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasyEmerald%2060" target="_blank" rel="noopener noreferrer" class="pasto-photo-cta" aria-label="Cotizar EasyEmerald 60">
+                Cotizar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </a>
             </div>
-            <div class="pasto-card">
-              <div class="pasto-card-name">EasyEmerald 40</div>
-              <div class="pasto-card-desc">Equilibrio perfecto entre apariencia y precio. 40 mm de altura, ideal para jardines medianos y frontales que buscan un verde impecable.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasyEmerald%2040%20para%20jardín%20residencial" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar EasyEmerald 40">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-            <div class="pasto-card">
-              <div class="pasto-card-name">EasyPark35</div>
-              <div class="pasto-card-desc">Resistente y versátil con 35 mm. Soporta tráfico moderado sin perder su color brillante. Perfecto para patios traseros y jardines con uso diario.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasyPark35%20para%20jardín%20residencial" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar EasyPark35">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-            <div class="pasto-card">
-              <div class="pasto-card-name">EasySpring30Plus</div>
-              <div class="pasto-card-desc">Diseño primaveral con tonos mixtos que imitan el pasto natural con máxima fidelidad. Altura 30 mm, suave al tacto y de bajo mantenimiento.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasySpring30Plus%20para%20jardín%20residencial" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar EasySpring30Plus">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </article>
+
+        <article class="pasto-photo-card reveal d1">
+          <div class="pasto-photo">
+            <img src="images/easyemerald40.jpg"
+                 alt="Pasto sintético EasyEmerald 40 — equilibrio perfecto densidad y precio para jardín residencial"
+                 loading="lazy" width="800" height="600">
+          </div>
+          <div class="pasto-photo-body">
+            <div class="pasto-photo-name">EasyEmerald 40</div>
+            <div class="pasto-photo-desc">Equilibrio perfecto entre apariencia y precio. 40mm de altura, ideal para jardines medianos y frontales que buscan un verde impecable.</div>
+            <div class="pasto-photo-footer">
+              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasyEmerald%2040%20residencial" target="_blank" rel="noopener noreferrer" class="pasto-photo-cta" aria-label="Cotizar EasyEmerald 40">
+                Cotizar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </a>
             </div>
           </div>
+        </article>
+
+        <article class="pasto-photo-card reveal d2">
+          <div class="pasto-photo">
+            <img src="images/easypark35.jpg"
+                 alt="Pasto sintético EasyPark35 — resistente y versátil 35mm para patio trasero con uso diario"
+                 loading="lazy" width="800" height="600">
+          </div>
+          <div class="pasto-photo-body">
+            <div class="pasto-photo-name">EasyPark35</div>
+            <div class="pasto-photo-desc">Resistente y versátil con 35mm. Soporta tráfico moderado sin perder su color. Perfecto para patios traseros con uso diario.</div>
+            <div class="pasto-photo-footer">
+              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasyPark35%20residencial" target="_blank" rel="noopener noreferrer" class="pasto-photo-cta" aria-label="Cotizar EasyPark35">
+                Cotizar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pasto-photo-card reveal d3">
+          <div class="pasto-photo">
+            <img src="images/easyspring30plus.jpg"
+                 alt="Pasto sintético EasySpring30Plus — tonos naturales mixtos 30mm para jardín residencial"
+                 loading="lazy" width="800" height="600">
+          </div>
+          <div class="pasto-photo-body">
+            <div class="pasto-photo-name">EasySpring30Plus</div>
+            <div class="pasto-photo-desc">Tonos mixtos que imitan el pasto natural con máxima fidelidad. Altura 30mm, suave al tacto y de bajo mantenimiento.</div>
+            <div class="pasto-photo-footer">
+              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasySpring30Plus" target="_blank" rel="noopener noreferrer" class="pasto-photo-cta" aria-label="Cotizar EasySpring30Plus">
+                Cotizar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- ══ PANEL: NIÑOS Y MASCOTAS ══ -->
+    <div class="cat-panel" id="panel-mascotas" role="tabpanel">
+      <div class="pasto-grid">
+
+        <article class="pasto-photo-card reveal">
+          <div class="pasto-photo">
+            <img src="images/easyemerald40.jpg"
+                 alt="Pasto sintético EasyEmerald 40 para niños y mascotas — certificado libre de tóxicos con drenaje inmediato"
+                 loading="lazy" width="800" height="600">
+            <span class="pasto-photo-badge badge-recom">Recomendado</span>
+          </div>
+          <div class="pasto-photo-body">
+            <div class="pasto-photo-name">EasyEmerald 40</div>
+            <div class="pasto-photo-desc">Certificado libre de sustancias tóxicas. Drenaje inmediato que elimina residuos líquidos al instante. El más pedido para familias con mascotas.</div>
+            <div class="pasto-photo-footer">
+              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasyEmerald%2040%20para%20mascotas" target="_blank" rel="noopener noreferrer" class="pasto-photo-cta" aria-label="Cotizar EasyEmerald 40 mascotas">
+                Cotizar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pasto-photo-card reveal d1">
+          <div class="pasto-photo">
+            <img src="images/easypark35.jpg"
+                 alt="Pasto sintético EasyPark35 para niños y mascotas — superficie firme resistente a rasguños"
+                 loading="lazy" width="800" height="600">
+          </div>
+          <div class="pasto-photo-body">
+            <div class="pasto-photo-name">EasyPark35</div>
+            <div class="pasto-photo-desc">Superficie firme y suave a la vez. Resistente a rasguños y juego intenso. Fácil de limpiar con manguera. Sin tierra que entre a la casa.</div>
+            <div class="pasto-photo-footer">
+              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasyPark35%20para%20mascotas" target="_blank" rel="noopener noreferrer" class="pasto-photo-cta" aria-label="Cotizar EasyPark35 mascotas">
+                Cotizar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pasto-photo-card reveal d2">
+          <div class="pasto-photo">
+            <img src="images/easypark30.jpg"
+                 alt="Pasto sintético EasyPark30 para niños y mascotas — pelo corto 30mm antipatógenos secado rápido"
+                 loading="lazy" width="800" height="600">
+          </div>
+          <div class="pasto-photo-body">
+            <div class="pasto-photo-name">EasyPark30</div>
+            <div class="pasto-photo-desc">Altura 30mm, pelo corto y tupido. Ideal para perros de raza pequeña y áreas de juego infantil. Antipatógenos y de rápido secado.</div>
+            <div class="pasto-photo-footer">
+              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasyPark30" target="_blank" rel="noopener noreferrer" class="pasto-photo-cta" aria-label="Cotizar EasyPark30">
+                Cotizar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- ══ PANEL: DECORATIVO ══ -->
+    <div class="cat-panel" id="panel-decorativo" role="tabpanel">
+      <div class="pasto-grid">
+
+        <article class="pasto-photo-card reveal">
+          <div class="pasto-photo">
+            <div class="pasto-photo-fallback" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
+            </div>
+          </div>
+          <div class="pasto-photo-body">
+            <div class="pasto-photo-name">Pastos Alfombra</div>
+            <div class="pasto-photo-desc">Pelo extra corto estilo golfito. Ideal para interiores, escaparates y eventos. Textura muy uniforme y acabado elegante.</div>
+            <div class="pasto-photo-footer">
+              <a href="https://wa.me/528142979309?text=Me%20interesan%20los%20Pastos%20Alfombra" target="_blank" rel="noopener noreferrer" class="pasto-photo-cta" aria-label="Cotizar Pastos Alfombra">
+                Cotizar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pasto-photo-card reveal d1">
+          <div class="pasto-photo">
+            <img src="images/ecopower.jpg"
+                 alt="Pasto sintético Ecopower decorativo — material reciclado tonos tierra y oliva para proyectos ecológicos"
+                 loading="lazy" width="800" height="600">
+          </div>
+          <div class="pasto-photo-body">
+            <div class="pasto-photo-name">Ecopower</div>
+            <div class="pasto-photo-desc">Fabricado con materiales reciclados. Estética naturalista con tonos tierra y oliva. Para proyectos decorativos con conciencia ambiental.</div>
+            <div class="pasto-photo-footer">
+              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20Ecopower" target="_blank" rel="noopener noreferrer" class="pasto-photo-cta" aria-label="Cotizar Ecopower">
+                Cotizar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pasto-photo-card reveal d2">
+          <div class="pasto-photo">
+            <img src="images/easysummer30.jpg"
+                 alt="Pasto sintético EasySummer30 decorativo — tonos tropicales 30mm para roof garden y terraza"
+                 loading="lazy" width="800" height="640">
+          </div>
+          <div class="pasto-photo-body">
+            <div class="pasto-photo-name">EasySummer30</div>
+            <div class="pasto-photo-desc">Tonos vibrantes inspirados en jardines tropicales. Altura 30mm con matices que aportan calidez. Para roof gardens y terrazas decorativas.</div>
+            <div class="pasto-photo-footer">
+              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasySummer30" target="_blank" rel="noopener noreferrer" class="pasto-photo-cta" aria-label="Cotizar EasySummer30">
+                Cotizar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pasto-photo-card reveal d3">
+          <div class="pasto-photo">
+            <div class="pasto-photo-fallback" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
+            </div>
+          </div>
+          <div class="pasto-photo-body">
+            <div class="pasto-photo-name">EasySummer20</div>
+            <div class="pasto-photo-desc">Pelo corto 20mm para interiores, balcones y escaparates. El favorito de arquitectos de interiores por su perfil discreto y elegante.</div>
+            <div class="pasto-photo-footer">
+              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasySummer20" target="_blank" rel="noopener noreferrer" class="pasto-photo-cta" aria-label="Cotizar EasySummer20">
+                Cotizar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- ══ PANEL: GRANDES PROYECTOS ══ -->
+    <div class="cat-panel" id="panel-grandes" role="tabpanel">
+      <div class="pasto-grid">
+
+        <article class="pasto-photo-card reveal">
+          <div class="pasto-photo">
+            <img src="images/easyemerald40.jpg"
+                 alt="Pasto sintético EasyEmerald 40 para grandes proyectos — estándar fraccionamientos y condominios"
+                 loading="lazy" width="800" height="600">
+          </div>
+          <div class="pasto-photo-body">
+            <div class="pasto-photo-name">EasyEmerald 40</div>
+            <div class="pasto-photo-desc">El estándar para fraccionamientos, condominios y desarrollos. Verde uniforme en grandes superficies con costo controlado.</div>
+            <div class="pasto-photo-footer">
+              <a href="https://wa.me/528142979309?text=Me%20interesa%20EasyEmerald%2040%20para%20proyecto%20grande" target="_blank" rel="noopener noreferrer" class="pasto-photo-cta" aria-label="Cotizar EasyEmerald 40 grandes proyectos">
+                Cotizar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pasto-photo-card reveal d1">
+          <div class="pasto-photo">
+            <img src="images/easypark35.jpg"
+                 alt="Pasto sintético EasyPark35 para grandes proyectos — resistente al tráfico intenso hoteles y centros comerciales"
+                 loading="lazy" width="800" height="600">
+          </div>
+          <div class="pasto-photo-body">
+            <div class="pasto-photo-name">EasyPark35</div>
+            <div class="pasto-photo-desc">Resistente al tráfico intenso de personas. Ideal para hoteles, centros comerciales y áreas comunes con alto flujo peatonal.</div>
+            <div class="pasto-photo-footer">
+              <a href="https://wa.me/528142979309?text=Me%20interesa%20EasyPark35%20para%20proyecto%20grande" target="_blank" rel="noopener noreferrer" class="pasto-photo-cta" aria-label="Cotizar EasyPark35 grandes proyectos">
+                Cotizar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pasto-photo-card reveal d2">
+          <div class="pasto-photo">
+            <img src="images/easyspring30plus.jpg"
+                 alt="Pasto sintético EasySpring30Plus para grandes proyectos — acabado premium para fraccionamientos de lujo"
+                 loading="lazy" width="800" height="600">
+          </div>
+          <div class="pasto-photo-body">
+            <div class="pasto-photo-name">EasySpring30Plus</div>
+            <div class="pasto-photo-desc">Para desarrollos que buscan diferenciarse con acabado premium. Sus tonos naturales dan valor percibido alto a fraccionamientos y residenciales.</div>
+            <div class="pasto-photo-footer">
+              <a href="https://wa.me/528142979309?text=Me%20interesa%20EasySpring30Plus%20para%20proyecto%20grande" target="_blank" rel="noopener noreferrer" class="pasto-photo-cta" aria-label="Cotizar EasySpring30Plus grandes proyectos">
+                Cotizar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pasto-photo-card reveal d3">
+          <div class="pasto-photo">
+            <img src="images/easybreeze30.jpg"
+                 alt="Pasto sintético EasyBreeze30 para grandes proyectos — fibra aireada 30mm zonas amplias exposición solar"
+                 loading="lazy" width="800" height="600">
+          </div>
+          <div class="pasto-photo-body">
+            <div class="pasto-photo-name">EasyBreeze30</div>
+            <div class="pasto-photo-desc">Fibra aireada de 30mm con excelente recuperación de pile. Para zonas amplias con exposición solar intensa y uso continuo.</div>
+            <div class="pasto-photo-footer">
+              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasyBreeze30" target="_blank" rel="noopener noreferrer" class="pasto-photo-cta" aria-label="Cotizar EasyBreeze30">
+                Cotizar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- ══ PANEL: PARQUES Y COMERCIAL ══ -->
+    <div class="cat-panel" id="panel-parques" role="tabpanel">
+      <div class="pasto-grid">
+
+        <article class="pasto-photo-card reveal">
+          <div class="pasto-photo">
+            <div class="pasto-photo-fallback" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z"/></svg>
+            </div>
+            <span class="pasto-photo-badge badge-popular">Colorido</span>
+          </div>
+          <div class="pasto-photo-body">
+            <div class="pasto-photo-name">Playground Colores</div>
+            <div class="pasto-photo-desc">Disponible en múltiples colores para áreas infantiles y parques. Absorción de impactos certificada. Seguro para caídas y juego activo.</div>
+            <div class="pasto-photo-footer">
+              <a href="https://wa.me/528142979309?text=Me%20interesa%20Playground%20Colores" target="_blank" rel="noopener noreferrer" class="pasto-photo-cta" aria-label="Cotizar Playground Colores">
+                Cotizar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pasto-photo-card reveal d1">
+          <div class="pasto-photo">
+            <img src="images/easyemerald40.jpg"
+                 alt="Pasto sintético EasyEmerald 40 para uso comercial — plazas y lobbies exteriores alto flujo"
+                 loading="lazy" width="800" height="600">
+          </div>
+          <div class="pasto-photo-body">
+            <div class="pasto-photo-name">EasyEmerald 40</div>
+            <div class="pasto-photo-desc">Ideal para plazas comerciales, lobbies exteriores y jardines de acceso público. Verde intenso con mantenimiento mínimo en alta exposición.</div>
+            <div class="pasto-photo-footer">
+              <a href="https://wa.me/528142979309?text=Me%20interesa%20EasyEmerald%2040%20comercial" target="_blank" rel="noopener noreferrer" class="pasto-photo-cta" aria-label="Cotizar EasyEmerald 40 comercial">
+                Cotizar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pasto-photo-card reveal d2">
+          <div class="pasto-photo">
+            <img src="images/easypark35.jpg"
+                 alt="Pasto sintético EasyPark35 parques municipales — alta resistencia tráfico peatonal intenso"
+                 loading="lazy" width="800" height="600">
+          </div>
+          <div class="pasto-photo-body">
+            <div class="pasto-photo-name">EasyPark35</div>
+            <div class="pasto-photo-desc">El más resistente al tráfico peatonal intenso. Perfecto para parques municipales, centros comerciales y áreas de alto flujo diario.</div>
+            <div class="pasto-photo-footer">
+              <a href="https://wa.me/528142979309?text=Me%20interesa%20EasyPark35%20comercial" target="_blank" rel="noopener noreferrer" class="pasto-photo-cta" aria-label="Cotizar EasyPark35 comercial">
+                Cotizar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- ══ PANEL: CANCHAS Y DEPORTE ══ -->
+    <div class="cat-panel" id="panel-canchas" role="tabpanel">
+      <div class="pasto-grid">
+        <div class="cat-prox-card">
+          <h3>Modelos deportivos en camino</h3>
+          <p>Estamos preparando nuestro catálogo de pastos para canchas de pádel, fútbol y áreas deportivas. Escríbenos y te asesoramos directamente.</p>
+          <a href="https://wa.me/528142979309?text=Me%20interesa%20pasto%20para%20cancha%20deportiva"
+             target="_blank" rel="noopener noreferrer"
+             class="btn btn-wa btn-sm" style="display:inline-flex;margin-top:1.25rem"
+             aria-label="Consultar pastos para canchas deportivas">
+            Consultar por WhatsApp
+          </a>
         </div>
       </div>
+    </div>
 
-      <!-- ── NIÑOS Y MASCOTAS ── -->
-      <div class="cat-item" role="listitem">
-        <button class="cat-trigger" aria-expanded="false" aria-controls="cat-mascotas">
-          <div class="cat-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-          </div>
-          <div class="cat-trigger-text">
-            <span class="cat-name">Niños y Mascotas</span>
-            <span class="cat-count">3 modelos disponibles</span>
-          </div>
-          <div class="cat-chevron" aria-hidden="true">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
-          </div>
-        </button>
-        <div class="cat-body" id="cat-mascotas" role="region">
-          <div class="cat-pastos">
-            <div class="pasto-card">
-              <span class="pasto-tag">Recomendado</span>
-              <div class="pasto-card-name">EasyEmerald 40</div>
-              <div class="pasto-card-desc">Certificado libre de sustancias tóxicas. Drenaje inmediato que elimina residuos líquidos al instante. El más pedido para familias con mascotas.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasyEmerald%2040%20para%20niños%20y%20mascotas" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar EasyEmerald 40 para mascotas">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-            <div class="pasto-card">
-              <div class="pasto-card-name">EasyPark35</div>
-              <div class="pasto-card-desc">Superficie firme y suave a la vez. Resistente a rasguños y juego intenso. Fácil de limpiar con manguera. Sin tierra que entre a la casa.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasyPark35%20para%20niños%20y%20mascotas" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar EasyPark35 para mascotas">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-            <div class="pasto-card">
-              <div class="pasto-card-name">EasyPark30</div>
-              <div class="pasto-card-desc">Altura 30 mm, pelo corto y tupido. Ideal para perros de raza pequeña y áreas de juego infantil. Antipatógenos y de rápido secado.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasyPark30%20para%20niños%20y%20mascotas" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar EasyPark30">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ── DECORATIVO ── -->
-      <div class="cat-item" role="listitem">
-        <button class="cat-trigger" aria-expanded="false" aria-controls="cat-decorativo">
-          <div class="cat-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
-          </div>
-          <div class="cat-trigger-text">
-            <span class="cat-name">Decorativo</span>
-            <span class="cat-count">4 modelos disponibles</span>
-          </div>
-          <div class="cat-chevron" aria-hidden="true">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
-          </div>
-        </button>
-        <div class="cat-body" id="cat-decorativo" role="region">
-          <div class="cat-pastos">
-            <div class="pasto-card">
-              <div class="pasto-card-name">Pastos Alfombra</div>
-              <div class="pasto-card-desc">Pelo extra corto estilo golfito. Ideal para interiores, escaparates, terrazas de diseño y eventos. Textura suave y acabado muy uniforme.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20los%20Pastos%20Alfombra%20decorativos" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar Pastos Alfombra">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-            <div class="pasto-card">
-              <div class="pasto-card-name">Ecopower</div>
-              <div class="pasto-card-desc">Fabricado con materiales reciclados. Estética naturalista con tonos tierra y oliva. Para proyectos decorativos con conciencia ambiental.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20Ecopower%20decorativo" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar Ecopower">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-            <div class="pasto-card">
-              <div class="pasto-card-name">EasySummer30</div>
-              <div class="pasto-card-desc">Tonos vibrantes inspirados en jardines tropicales. Altura 30 mm con matices que aportan calidez. Perfecto para roof gardens y terrazas decorativas.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasySummer30%20decorativo" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar EasySummer30">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-            <div class="pasto-card">
-              <div class="pasto-card-name">EasySummer20</div>
-              <div class="pasto-card-desc">Pelo corto 20 mm para interiores, balcones y escaparates. El favorito de arquitectos de interiores por su perfil discreto y elegante.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasySummer20%20decorativo" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar EasySummer20">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ── GRANDES PROYECTOS ── -->
-      <div class="cat-item" role="listitem">
-        <button class="cat-trigger" aria-expanded="false" aria-controls="cat-grandes">
-          <div class="cat-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-          </div>
-          <div class="cat-trigger-text">
-            <span class="cat-name">Grandes Proyectos</span>
-            <span class="cat-count">4 modelos disponibles</span>
-          </div>
-          <div class="cat-chevron" aria-hidden="true">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
-          </div>
-        </button>
-        <div class="cat-body" id="cat-grandes" role="region">
-          <div class="cat-pastos">
-            <div class="pasto-card">
-              <div class="pasto-card-name">EasyEmerald 40</div>
-              <div class="pasto-card-desc">El estándar para fraccionamientos, condominios y desarrollos residenciales de escala. Verde uniforme en grandes superficies con costo controlado.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasyEmerald%2040%20para%20un%20proyecto%20grande" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar EasyEmerald 40 para grandes proyectos">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-            <div class="pasto-card">
-              <div class="pasto-card-name">EasyPark35</div>
-              <div class="pasto-card-desc">Resistente al tráfico intenso de personas. Ideal para áreas comunes de condominios, hoteles y centros comerciales con alto flujo peatonal.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasyPark35%20para%20un%20proyecto%20grande" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar EasyPark35 para grandes proyectos">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-            <div class="pasto-card">
-              <div class="pasto-card-name">EasySpring30Plus</div>
-              <div class="pasto-card-desc">Para desarrollos que buscan diferenciarse con un acabado premium. Sus tonos naturales dan valor percibido alto a fraccionamientos y residenciales.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasySpring30Plus%20para%20un%20proyecto%20grande" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar EasySpring30Plus">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-            <div class="pasto-card">
-              <div class="pasto-card-name">EasyBreeze30</div>
-              <div class="pasto-card-desc">Fibra aireada de 30 mm con excelente recuperación de pile. Diseñado para zonas amplias con exposición solar intensa y uso continuo.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasyBreeze30%20para%20un%20proyecto%20grande" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar EasyBreeze30">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ── PARQUES Y COMERCIAL ── -->
-      <div class="cat-item" role="listitem">
-        <button class="cat-trigger" aria-expanded="false" aria-controls="cat-parques">
-          <div class="cat-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z"/></svg>
-          </div>
-          <div class="cat-trigger-text">
-            <span class="cat-name">Parques y Comercial</span>
-            <span class="cat-count">3 modelos disponibles</span>
-          </div>
-          <div class="cat-chevron" aria-hidden="true">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
-          </div>
-        </button>
-        <div class="cat-body" id="cat-parques" role="region">
-          <div class="cat-pastos">
-            <div class="pasto-card">
-              <span class="pasto-tag">Colorido</span>
-              <div class="pasto-card-name">Playground Colores</div>
-              <div class="pasto-card-desc">Disponible en múltiples colores para áreas infantiles y parques. Absorción de impactos certificada. Seguro para caídas y juego activo de niños.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20Playground%20Colores%20para%20parque" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar Playground Colores">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-            <div class="pasto-card">
-              <div class="pasto-card-name">EasyEmerald 40</div>
-              <div class="pasto-card-desc">La opción ideal para plazas comerciales, lobbies exteriores y jardines de acceso público. Verde intenso con mantenimiento mínimo en alta exposición.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasyEmerald%2040%20para%20uso%20comercial" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar EasyEmerald 40 comercial">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-            <div class="pasto-card">
-              <div class="pasto-card-name">EasyPark35</div>
-              <div class="pasto-card-desc">El más resistente al tráfico peatonal intenso. Perfecto para parques municipales, centros comerciales y áreas de alto flujo diario de personas.</div>
-              <a href="https://wa.me/528142979309?text=Me%20interesa%20el%20EasyPark35%20para%20uso%20comercial" target="_blank" rel="noopener noreferrer" class="pasto-card-cta" aria-label="Cotizar EasyPark35 comercial">
-                Cotizar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ── CANCHAS Y DEPORTE ── -->
-      <div class="cat-item" role="listitem">
-        <button class="cat-trigger" aria-expanded="false" aria-controls="cat-canchas">
-          <div class="cat-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-          </div>
-          <div class="cat-trigger-text">
-            <span class="cat-name">Canchas y Deporte</span>
-            <span class="cat-count">Próximamente</span>
-          </div>
-          <div class="cat-chevron" aria-hidden="true">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
-          </div>
-        </button>
-        <div class="cat-body" id="cat-canchas" role="region">
-          <div style="padding:1.5rem 1.4rem 1.8rem;text-align:center">
-            <div style="font-family:var(--f-serif);font-size:1.1rem;font-weight:700;color:var(--ink);margin-bottom:.5rem">Modelos deportivos en camino</div>
-            <p style="font-size:.88rem;color:var(--stone);font-weight:300;line-height:1.65;max-width:420px;margin-inline:auto">Estamos preparando nuestro catálogo de pastos para canchas de pádel, fútbol y áreas deportivas. Mientras tanto, escríbenos y te asesoramos directamente.</p>
-            <a href="https://wa.me/528142979309?text=Me%20interesa%20pasto%20para%20cancha%20deportiva"
-               target="_blank" rel="noopener noreferrer"
-               class="btn btn-wa btn-sm" style="display:inline-flex;margin-top:1rem"
-               aria-label="Consultar pastos para canchas deportivas">
-              Consultar por WhatsApp
-            </a>
-          </div>
-        </div>
-      </div>
-
-    </div><!-- /cat-accordion -->
-
-    <div style="text-align:center;margin-top:2.5rem" class="reveal">
-      <a href="https://wa.me/528142979309?text=Quiero%20conocer%20todos%20los%20modelos%20y%20precios%20disponibles"
+    <div style="text-align:center;margin-top:2.25rem" class="reveal">
+      <a href="https://wa.me/528142979309?text=Quiero%20conocer%20todos%20los%20modelos%20disponibles"
          target="_blank" rel="noopener noreferrer"
          class="btn btn-outline btn-lg"
-         aria-label="Ver todos los modelos de pasto sintético disponibles">
-        Ver todos los modelos disponibles
+         aria-label="Ver todos los modelos en WhatsApp">
+        &iquest;No encuentras el tuyo? Escríbenos
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
     </div>
@@ -1621,7 +1888,7 @@ ul,ol{list-style:none}
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════════
+══════════════════════════════════════════
      17 AÑOS — Authority / Trust section
      Reemplaza 17 años — EasyGarden como marca propia
 ══════════════════════════════════════════════ -->
@@ -2394,24 +2661,49 @@ document.querySelectorAll('.faq-q').forEach(btn => {
   });
 });
 
-// ── Catálogo acordeón ────────────────────────────────────────
-document.querySelectorAll('.cat-trigger').forEach(function(trigger) {
-  trigger.addEventListener('click', function() {
-    var item = trigger.closest('.cat-item');
-    var isOpen = item.classList.contains('open');
-    // Cerrar todos
-    document.querySelectorAll('.cat-item').forEach(function(i) {
-      i.classList.remove('open');
-      var t = i.querySelector('.cat-trigger');
-      if (t) t.setAttribute('aria-expanded', 'false');
+// ── Catálogo pills — filtro por categoría ─────────────────
+(function() {
+  var pills = document.querySelectorAll('.cat-pill');
+  var panels = document.querySelectorAll('.cat-panel');
+
+  if (!pills.length) return;
+
+  pills.forEach(function(pill) {
+    pill.addEventListener('click', function() {
+      var target = pill.getAttribute('data-cat');
+
+      // Update pills
+      pills.forEach(function(p) {
+        p.classList.remove('active');
+        p.setAttribute('aria-selected', 'false');
+      });
+      pill.classList.add('active');
+      pill.setAttribute('aria-selected', 'true');
+
+      // Update panels
+      panels.forEach(function(panel) {
+        panel.classList.remove('active');
+      });
+      var targetPanel = document.getElementById('panel-' + target);
+      if (targetPanel) {
+        targetPanel.classList.add('active');
+        // Re-trigger reveal animations on newly shown cards
+        targetPanel.querySelectorAll('.reveal').forEach(function(el) {
+          el.classList.remove('in');
+          setTimeout(function() { el.classList.add('in'); }, 30);
+        });
+      }
     });
-    // Abrir el clickeado si estaba cerrado
-    if (!isOpen) {
-      item.classList.add('open');
-      trigger.setAttribute('aria-expanded', 'true');
-    }
   });
-});
+
+  // Activate initial reveals
+  var activePanel = document.querySelector('.cat-panel.active');
+  if (activePanel) {
+    activePanel.querySelectorAll('.reveal').forEach(function(el) {
+      el.classList.add('in');
+    });
+  }
+})();
 
 // ── Contact form → WhatsApp ──────────────────────────────────
 document.getElementById('contactForm').addEventListener('submit', function(e) {
