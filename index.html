@@ -87,8 +87,8 @@
         "addressCountry": "MX"
       },
       "sameAs": [
-        "https://www.instagram.com/easygardenmx",
-        "https://www.facebook.com/easygardenmx",
+        "https://www.instagram.com/pastosinteticoeasygardeny/",
+        "https://www.facebook.com/www.easygarden.com.mx/",
         "https://wa.me/528142979309"
       ]
     },
@@ -964,7 +964,15 @@ ul,ol{list-style:none}
   align-items:center;text-align:center;padding-top:1.85rem;
 }
 @media(min-width:640px){.footer-bottom{flex-direction:row;justify-content:space-between;text-align:left}}
+.footer-bottom-social{display:flex;gap:.75rem;align-items:center}
+.footer-bottom-social a{color:rgba(255,255,255,.35);transition:color .2s;line-height:0}
+.footer-bottom-social a:hover{color:var(--lime)}
 .footer-copy{font-size:.75rem;color:rgba(255,255,255,.22)}
+.footer-social{display:flex;flex-direction:column;gap:.55rem;margin-top:1rem}
+.footer-social-link{display:flex;align-items:center;gap:.5rem;color:rgba(255,255,255,.52);font-size:.8rem;text-decoration:none;transition:color .2s}
+.footer-social-link:hover{color:var(--lime)}
+.footer-social-link svg{flex-shrink:0;opacity:.75}
+.footer-social-link:hover svg{opacity:1}
 .footer-legal{display:flex;gap:1.35rem}
 .footer-legal a{font-size:.75rem;color:rgba(255,255,255,.22);transition:color .18s}
 .footer-legal a:hover{color:rgba(255,255,255,.6)}
@@ -2787,6 +2795,18 @@ ul,ol{list-style:none}
             ventas@easygarden.com.mx
           </a>
         </div>
+
+        <!-- Redes sociales -->
+        <div class="footer-social" role="list" aria-label="Redes sociales EasyGarden">
+          <a href="https://www.instagram.com/pastosinteticoeasygardeny/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Instagram @pastosinteticoeasygardeny" role="listitem">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            <span>@pastosinteticoeasygardeny</span>
+          </a>
+          <a href="https://www.facebook.com/www.easygarden.com.mx/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Facebook EasyGarden México" role="listitem">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            <span>EasyGarden México</span>
+          </a>
+        </div>
       </div>
 
       <!-- Aplicaciones column -->
@@ -2842,6 +2862,14 @@ ul,ol{list-style:none}
 
     <div class="footer-bottom">
       <span class="footer-copy">&copy; 2026 EasyGarden México. Todos los derechos reservados.</span>
+      <div class="footer-bottom-social">
+        <a href="https://www.instagram.com/pastosinteticoeasygardeny/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://www.facebook.com/www.easygarden.com.mx/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+      </div>
       <div class="footer-legal">
         <a href="/aviso-de-privacidad">Privacidad</a>
         <a href="/terminos">Términos</a>
