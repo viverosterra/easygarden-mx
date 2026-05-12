@@ -4,93 +4,67 @@
 
   <!-- Home -->
   <url>
-    <loc>https://www.pastosinteticomexico.mx/</loc>
-    <lastmod>2026-05-07</lastmod>
+    <loc>https://www.easygarden.com.mx/</loc>
+    <lastmod>2026-05-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="es-MX" href="https://www.pastosinteticomexico.mx/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://www.easygarden.com.mx/"/>
   </url>
 
   <!-- Ciudades -->
   <url>
-    <loc>https://www.pastosinteticomexico.mx/pasto-sintetico-monterrey/</loc>
-    <lastmod>2026-05-07</lastmod>
+    <loc>https://www.easygarden.com.mx/pasto-sintetico-monterrey.html</loc>
+    <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.pastosinteticomexico.mx/pasto-sintetico-guadalajara/</loc>
-    <lastmod>2026-05-07</lastmod>
+    <loc>https://www.easygarden.com.mx/pasto-sintetico-guadalajara.html</loc>
+    <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.pastosinteticomexico.mx/pasto-sintetico-ciudad-de-mexico/</loc>
-    <lastmod>2026-05-07</lastmod>
+    <loc>https://www.easygarden.com.mx/pasto-sintetico-ciudad-de-mexico.html</loc>
+    <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.pastosinteticomexico.mx/pasto-sintetico-queretaro/</loc>
-    <lastmod>2026-05-07</lastmod>
+    <loc>https://www.easygarden.com.mx/pasto-sintetico-queretaro.html</loc>
+    <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.pastosinteticomexico.mx/pasto-sintetico-tampico/</loc>
-    <lastmod>2026-05-07</lastmod>
+    <loc>https://www.easygarden.com.mx/pasto-sintetico-tampico.html</loc>
+    <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.pastosinteticomexico.mx/pasto-sintetico-saltillo/</loc>
-    <lastmod>2026-05-07</lastmod>
+    <loc>https://www.easygarden.com.mx/pasto-sintetico-saltillo.html</loc>
+    <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-
-  <!-- Casos de uso -->
-  <url>
-    <loc>https://www.pastosinteticomexico.mx/pasto-sintetico-para-jardin/</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://www.pastosinteticomexico.mx/pasto-sintetico-para-terraza/</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.pastosinteticomexico.mx/pasto-sintetico-para-mascotas/</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.pastosinteticomexico.mx/pasto-sintetico-para-padel/</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
   </url>
 
   <!-- Blog -->
   <url>
-    <loc>https://www.pastosinteticomexico.mx/blog/cuanto-cuesta-pasto-sintetico-mexico/</loc>
-    <lastmod>2026-05-07</lastmod>
+    <loc>https://www.easygarden.com.mx/blog/cuanto-cuesta-pasto-sintetico-mexico.html</loc>
+    <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.pastosinteticomexico.mx/blog/pasto-sintetico-vs-natural/</loc>
-    <lastmod>2026-05-07</lastmod>
+    <loc>https://www.easygarden.com.mx/blog/pasto-sintetico-vs-natural.html</loc>
+    <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.pastosinteticomexico.mx/blog/pasto-sintetico-para-mascotas/</loc>
-    <lastmod>2026-05-07</lastmod>
+    <loc>https://www.easygarden.com.mx/blog/pasto-sintetico-para-mascotas.html</loc>
+    <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>

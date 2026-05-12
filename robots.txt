@@ -30,4 +30,4 @@ User-agent: CCBot
 Disallow: /
 
 # Sitemap
-Sitemap: https://www.pastosinteticomexico.mx/sitemap.xml
+Sitemap: https://www.easygarden.com.mx/sitemap.xml
