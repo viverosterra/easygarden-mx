@@ -341,6 +341,27 @@ ul{list-style:none}
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .65s var(--ease),transform .65s var(--ease)}
 .reveal.in{opacity:1;transform:none}
 .d1{transition-delay:.07s}.d2{transition-delay:.14s}.d3{transition-delay:.21s}
+
+/* ─── PILL FILTERS ────────────────────────── */
+.filter-bar{padding:1.5rem 0 0;position:sticky;top:64px;z-index:90;background:var(--bg)}
+.filter-bar::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:1px;background:var(--border)}
+.filter-inner{display:flex;align-items:center;gap:.5rem;flex-wrap:nowrap;overflow-x:auto;padding-bottom:1rem;scrollbar-width:none}
+.filter-inner::-webkit-scrollbar{display:none}
+.filter-lbl{font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--stone);white-space:nowrap;flex-shrink:0;margin-right:.25rem}
+.pill{display:inline-flex;align-items:center;gap:.4rem;padding:.42rem 1rem;border-radius:99px;border:1.5px solid var(--border-2);background:var(--white);font-family:var(--f-sans);font-size:.78rem;font-weight:500;color:var(--ink-4);cursor:pointer;white-space:nowrap;flex-shrink:0;transition:all .2s var(--ease);line-height:1}
+.pill:hover{border-color:var(--lime);color:var(--forest);background:var(--lime-xpale)}
+.pill.active{background:var(--forest);border-color:var(--forest);color:#fff}
+.pill-dot{width:7px;height:7px;border-radius:50%;background:currentColor;opacity:.7}
+/* card hide/show animation */
+.article-card,.cat-card{transition:opacity .25s var(--ease),transform .25s var(--ease)}
+.article-card.hidden,.cat-card.hidden{opacity:0;transform:scale(.97);pointer-events:none;position:absolute;visibility:hidden}
+/* section visibility */
+.cat-section.section-hidden,.featured.section-hidden{display:none}
+/* empty state */
+.no-results{display:none;flex-direction:column;align-items:center;text-align:center;padding:4rem 1rem;gap:1rem;color:var(--stone)}
+.no-results.visible{display:flex}
+.no-results svg{opacity:.3}
+.no-results p{font-size:.95rem}
 </style>
 </head>
 <body>
@@ -417,15 +438,32 @@ ul{list-style:none}
     </div>
   </section>
 
+  <!-- ══ PILL FILTERS ══════════════════════════ -->
+  <div class="filter-bar" role="navigation" aria-label="Filtrar artículos por tema">
+    <div class="wrap">
+      <div class="filter-inner">
+        <span class="filter-lbl" aria-hidden="true">Tema</span>
+        <button class="pill active" data-pill="todos" aria-pressed="true">Todos</button>
+        <button class="pill" data-pill="guia" aria-pressed="false"><span class="pill-dot" style="background:var(--lime)"></span>Guías de compra</button>
+        <button class="pill" data-pill="precios" aria-pressed="false"><span class="pill-dot" style="background:#F59E0B"></span>Precios</button>
+        <button class="pill" data-pill="instalacion" aria-pressed="false"><span class="pill-dot" style="background:var(--forest-mid)"></span>Instalación</button>
+        <button class="pill" data-pill="clima" aria-pressed="false"><span class="pill-dot" style="background:#3B82F6"></span>Clima</button>
+        <button class="pill" data-pill="mascotas" aria-pressed="false"><span class="pill-dot" style="background:#EC4899"></span>Mascotas</button>
+        <button class="pill" data-pill="espacios" aria-pressed="false"><span class="pill-dot" style="background:#8B5CF6"></span>Espacios</button>
+        <button class="pill" data-pill="comparativa" aria-pressed="false"><span class="pill-dot" style="background:var(--stone)"></span>Comparativa</button>
+      </div>
+    </div>
+  </div>
+
   <!-- ══ ARTÍCULOS DESTACADOS ═════════════════ -->
-  <section class="featured" aria-labelledby="featured-lbl">
+  <section class="featured" aria-labelledby="featured-lbl" data-section="guia precios comparativa">
     <div class="wrap">
       <div class="section-label" id="featured-lbl">Artículos destacados</div>
 
       <div class="featured-grid">
 
         <!-- Card 1 — ocupa 2 filas en desktop -->
-        <article class="article-card featured-card reveal">
+        <article class="article-card featured-card reveal" data-filter="guia">
           <a href="/blog/guia-completa-pasto-sintetico.html" aria-label="Leer: Pasto Sintético en México: La Guía Completa 2026">
             <div class="card-img">
               <div class="card-img-placeholder" aria-hidden="true">
@@ -451,7 +489,7 @@ ul{list-style:none}
         </article>
 
         <!-- Card 2 -->
-        <article class="article-card featured-card reveal d1">
+        <article class="article-card featured-card reveal d1" data-filter="precios">
           <a href="/blog/cuanto-cuesta-instalar-pasto-sintetico-2026.html" aria-label="Leer: ¿Cuánto cuesta instalar pasto sintético en México en 2026?">
             <div class="card-img">
               <div class="card-img-placeholder" aria-hidden="true">
@@ -477,7 +515,7 @@ ul{list-style:none}
         </article>
 
         <!-- Card 3 -->
-        <article class="article-card featured-card reveal d2">
+        <article class="article-card featured-card reveal d2" data-filter="comparativa">
           <a href="/blog/pasto-sintetico-vs-natural.html" aria-label="Leer: Pasto sintético vs pasto natural">
             <div class="card-img">
               <div class="card-img-placeholder" aria-hidden="true">
@@ -507,12 +545,12 @@ ul{list-style:none}
   </section>
 
   <!-- ══ GUÍAS DE COMPRA ═══════════════════════ -->
-  <section class="cat-section" aria-labelledby="cat-compra">
+  <section class="cat-section" aria-labelledby="cat-compra" data-section="guia">
     <div class="wrap">
       <div class="section-label" id="cat-compra">Guías de compra</div>
       <div class="cat-grid">
 
-        <article class="cat-card reveal">
+        <article class="cat-card reveal" data-filter="guia">
           <a href="/blog/cuanto-dura-pasto-sintetico.html">
             <span class="card-tag">Durabilidad</span>
             <h3 class="card-title">¿Cuánto dura el pasto sintético?</h3>
@@ -530,7 +568,7 @@ ul{list-style:none}
           </a>
         </article>
 
-        <article class="cat-card reveal d1">
+        <article class="cat-card reveal d1" data-filter="guia">
           <a href="/blog/como-elegir-modelo-pasto-sintetico.html">
             <span class="card-tag">Guía de compra</span>
             <h3 class="card-title">¿Cómo elegir el modelo correcto?</h3>
@@ -548,7 +586,7 @@ ul{list-style:none}
           </a>
         </article>
 
-        <article class="cat-card reveal d2">
+        <article class="cat-card reveal d2" data-filter="guia">
           <a href="/blog/garantia-pasto-sintetico.html">
             <span class="card-tag">Garantía</span>
             <h3 class="card-title">Garantía de pasto sintético: qué cubre y qué no</h3>
@@ -571,12 +609,12 @@ ul{list-style:none}
   </section>
 
   <!-- ══ INSTALACIÓN Y CUIDADO ═════════════════ -->
-  <section class="cat-section" aria-labelledby="cat-cuidado">
+  <section class="cat-section" aria-labelledby="cat-cuidado" data-section="instalacion clima">
     <div class="wrap">
       <div class="section-label" id="cat-cuidado">Instalación y cuidado</div>
       <div class="cat-grid">
 
-        <article class="cat-card reveal">
+        <article class="cat-card reveal" data-filter="instalacion">
           <a href="/blog/mantenimiento-pasto-sintetico.html">
             <span class="card-tag">Mantenimiento</span>
             <h3 class="card-title">Cómo limpiar y dar mantenimiento al pasto sintético</h3>
@@ -594,7 +632,7 @@ ul{list-style:none}
           </a>
         </article>
 
-        <article class="cat-card reveal d1">
+        <article class="cat-card reveal d1" data-filter="clima instalacion">
           <a href="/blog/pasto-sintetico-calor-verano.html">
             <span class="card-tag">Clima</span>
             <h3 class="card-title">¿El pasto sintético se calienta en verano?</h3>
@@ -612,7 +650,7 @@ ul{list-style:none}
           </a>
         </article>
 
-        <article class="cat-card reveal d2">
+        <article class="cat-card reveal d2" data-filter="clima instalacion">
           <a href="/blog/pasto-sintetico-lluvias.html">
             <span class="card-tag">Clima</span>
             <h3 class="card-title">Pasto sintético en temporada de lluvias</h3>
@@ -635,12 +673,12 @@ ul{list-style:none}
   </section>
 
   <!-- ══ POR TIPO DE ESPACIO ═══════════════════ -->
-  <section class="cat-section" aria-labelledby="cat-espacio">
+  <section class="cat-section" aria-labelledby="cat-espacio" data-section="mascotas espacios">
     <div class="wrap">
       <div class="section-label" id="cat-espacio">Por tipo de espacio</div>
       <div class="cat-grid">
 
-        <article class="cat-card reveal">
+        <article class="cat-card reveal" data-filter="mascotas espacios">
           <a href="/blog/pasto-sintetico-para-mascotas.html">
             <span class="card-tag">Mascotas</span>
             <h3 class="card-title">Pasto sintético para mascotas</h3>
@@ -658,7 +696,7 @@ ul{list-style:none}
           </a>
         </article>
 
-        <article class="cat-card reveal d1">
+        <article class="cat-card reveal d1" data-filter="espacios">
           <a href="/blog/pasto-sintetico-roof-garden.html">
             <span class="card-tag">Roof garden</span>
             <h3 class="card-title">Pasto sintético en roof garden y azoteas</h3>
@@ -676,7 +714,7 @@ ul{list-style:none}
           </a>
         </article>
 
-        <article class="cat-card reveal d2">
+        <article class="cat-card reveal d2" data-filter="espacios">
           <a href="/blog/pasto-sintetico-alberca.html">
             <span class="card-tag">Alberca</span>
             <h3 class="card-title">Pasto sintético en jardín con alberca</h3>
@@ -697,6 +735,15 @@ ul{list-style:none}
       </div>
     </div>
   </section>
+
+  <!-- ══ EMPTY STATE ══════════════════════════ -->
+  <div class="wrap">
+    <div class="no-results" id="noResults" role="status" aria-live="polite">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <p>No hay artículos en esta categoría todavía.<br>Próximamente publicamos más contenido.</p>
+      <button class="pill active" onclick="document.querySelector('[data-pill=todos]').click()">Ver todos los artículos</button>
+    </div>
+  </div>
 
   <!-- ══ CTA STRIP ═════════════════════════════ -->
   <section class="cta-strip" aria-label="Solicitar cotización">
@@ -856,6 +903,63 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeNav(); 
 document.addEventListener('click', e => {
   if (drawer.classList.contains('open') && !nav.contains(e.target)) closeNav();
 });
+
+// ── PILL FILTERS ─────────────────────────────────────────────
+(function () {
+  const pills    = document.querySelectorAll('.pill[data-pill]');
+  const cards    = document.querySelectorAll('[data-filter]');
+  const sections = document.querySelectorAll('[data-section]');
+  const noRes    = document.getElementById('noResults');
+
+  function activate(tag) {
+    // update pills
+    pills.forEach(p => {
+      const active = p.dataset.pill === tag;
+      p.classList.toggle('active', active);
+      p.setAttribute('aria-pressed', String(active));
+    });
+
+    if (tag === 'todos') {
+      // show everything
+      cards.forEach(c => c.classList.remove('hidden'));
+      sections.forEach(s => s.classList.remove('section-hidden'));
+      noRes.classList.remove('visible');
+      return;
+    }
+
+    // filter cards
+    let visible = 0;
+    cards.forEach(c => {
+      const tags = c.dataset.filter.split(' ');
+      const match = tags.includes(tag);
+      c.classList.toggle('hidden', !match);
+      if (match) visible++;
+    });
+
+    // hide sections where all cards are hidden
+    sections.forEach(s => {
+      const secTags  = s.dataset.section.split(' ');
+      const hasMatch = secTags.includes(tag);
+      s.classList.toggle('section-hidden', !hasMatch);
+    });
+
+    // empty state
+    noRes.classList.toggle('visible', visible === 0);
+  }
+
+  pills.forEach(p => {
+    p.addEventListener('click', () => activate(p.dataset.pill));
+  });
+
+  // keyboard: arrow navigation between pills
+  const pillArr = Array.from(pills);
+  pills.forEach((p, i) => {
+    p.addEventListener('keydown', e => {
+      if (e.key === 'ArrowRight') { e.preventDefault(); pillArr[(i + 1) % pillArr.length].focus(); }
+      if (e.key === 'ArrowLeft')  { e.preventDefault(); pillArr[(i - 1 + pillArr.length) % pillArr.length].focus(); }
+    });
+  });
+})();
 </script>
 </body>
 </html>
