@@ -54,10 +54,10 @@
 <meta name="citation_author" content="EasyGarden México">
 <meta name="citation_language" content="es-MX">
 
-<!-- FONTS: Fraunces (display serif) + Plus Jakarta Sans (body) — Brand typography system -->
+<!-- FONTS: Urbanist (display geometric) + Manrope (body) — Premium sans-serif system -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,700;0,9..144,800;1,9..144,300;1,9..144,400;1,9..144,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <!-- FAVICON -->
 <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
@@ -420,8 +420,8 @@
   --shadow-md:   0 2px 8px rgba(0,0,0,.06),0 12px 32px rgba(0,0,0,.09);
   --shadow-lg:   0 4px 16px rgba(0,0,0,.08),0 24px 56px rgba(0,0,0,.12);
   --ease:        cubic-bezier(0.22,1,0.36,1);
-  --f-serif:     'Fraunces',Georgia,serif;
-  --f-sans:      'Plus Jakarta Sans',system-ui,sans-serif;
+  --f-serif:     'Urbanist',system-ui,sans-serif;
+  --f-sans:      'Manrope',system-ui,sans-serif;
 }
 
 /* ─── RESET ───────────────────────────────── */
@@ -445,8 +445,8 @@ ul,ol{list-style:none}
 /* ─── TYPOGRAPHY BASE ─────────────────────── */
 .eyebrow{
   display:inline-flex;align-items:center;gap:.55rem;
-  font-family:var(--f-sans);font-size:.68rem;font-weight:700;
-  letter-spacing:.18em;text-transform:uppercase;color:var(--lime-mid);
+  font-family:var(--f-sans);font-size:.65rem;font-weight:800;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--lime-mid);
 }
 .eyebrow::before{content:'';width:18px;height:1.5px;background:var(--lime);border-radius:1px;flex-shrink:0}
 .eyebrow.light{color:var(--lime-light)}
@@ -454,8 +454,8 @@ ul,ol{list-style:none}
 
 /* ─── WORDMARK / LOGO ─────────────────────── */
 .wm{display:inline-flex;align-items:baseline;white-space:nowrap;user-select:none}
-.wm-easy{font-family:var(--f-serif);font-style:italic;font-weight:300;letter-spacing:-.01em;line-height:1;color:var(--ink-2)}
-.wm-garden{font-family:var(--f-serif);font-style:normal;font-weight:700;letter-spacing:-.035em;line-height:1;color:var(--lime-mid)}
+.wm-easy{font-family:var(--f-serif);font-style:normal;font-weight:300;letter-spacing:-.02em;line-height:1;color:var(--ink-2)}
+.wm-garden{font-family:var(--f-serif);font-style:normal;font-weight:800;letter-spacing:-.04em;line-height:1;color:var(--lime-mid)}
 .wm-dark .wm-easy{color:rgba(255,255,255,.55)}
 .wm-dark .wm-garden{color:var(--lime)}
 
@@ -568,12 +568,12 @@ ul,ol{list-style:none}
 
 .hero-h1{
   font-family:var(--f-serif);
-  font-size:clamp(2.8rem,5.5vw,5.2rem);
-  font-weight:800;line-height:.98;
-  letter-spacing:-.04em;color:var(--ink);
+  font-size:clamp(2.6rem,5.2vw,5rem);
+  font-weight:900;line-height:.96;
+  letter-spacing:-.05em;color:var(--ink);
   margin-top:1.25rem;
 }
-.hero-h1 em{font-style:italic;font-weight:300;color:var(--lime-mid)}
+.hero-h1 em{font-style:normal;font-weight:300;color:var(--lime-mid);letter-spacing:-.03em}
 .hero-h1 .accent{color:var(--lime);display:inline;position:relative}
 .hero-h1 .accent::after{
   content:'';position:absolute;
@@ -647,8 +647,8 @@ ul,ol{list-style:none}
   display:flex;align-items:center;justify-content:center;flex-shrink:0;
 }
 .float-val{
-  font-family:var(--f-serif);font-weight:800;font-size:1.3rem;
-  letter-spacing:-.03em;color:var(--ink);line-height:1;
+  font-family:var(--f-serif);font-weight:900;font-size:1.25rem;
+  letter-spacing:-.04em;color:var(--ink);line-height:1;
 }
 .float-lbl{font-size:.72rem;color:var(--stone);margin-top:.15rem;font-weight:400}
 
@@ -795,16 +795,16 @@ ul,ol{list-style:none}
 }
 .cert-label{font-size:.65rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.38);margin-bottom:.3rem}
 .cert-title{
-  font-family:var(--f-serif);font-size:1.4rem;font-weight:700;
-  color:#fff;letter-spacing:-.02em;line-height:1.15;
+  font-family:var(--f-serif);font-size:1.45rem;font-weight:800;
+  color:#fff;letter-spacing:-.045em;line-height:1.1;
 }
-.cert-title em{font-style:italic;color:var(--lime);font-weight:300}
+.cert-title em{font-style:normal;color:var(--lime);font-weight:300;letter-spacing:-.02em}
 .cert-stats{display:grid;grid-template-columns:repeat(3,1fr);position:relative;z-index:1}
 .cert-stat{padding:1.15rem 1rem;text-align:center;border-right:1px solid rgba(255,255,255,.07)}
 .cert-stat:last-child{border-right:none}
 .cert-stat-val{
-  font-family:var(--f-serif);font-size:1.55rem;font-weight:800;
-  color:#fff;letter-spacing:-.04em;line-height:1;
+  font-family:var(--f-serif);font-size:1.6rem;font-weight:900;
+  color:#fff;letter-spacing:-.05em;line-height:1;
 }
 .cert-stat-val em{color:var(--lime);font-style:normal}
 .cert-stat-lbl{font-size:.62rem;color:rgba(255,255,255,.38);margin-top:.25rem;text-transform:uppercase;letter-spacing:.06em}
@@ -875,8 +875,8 @@ ul,ol{list-style:none}
 }
 @media(min-width:768px){.cta-band-inner{flex-direction:row;align-items:center;justify-content:space-between}}
 .cta-band-title{
-  font-family:var(--f-serif);font-size:clamp(1.4rem,2.8vw,2.1rem);
-  font-weight:700;color:#fff;letter-spacing:-.025em;line-height:1.12;
+  font-family:var(--f-serif);font-size:clamp(1.35rem,2.6vw,2rem);
+  font-weight:800;color:#fff;letter-spacing:-.05em;line-height:1.08;
 }
 .cta-band-sub{font-size:.88rem;color:rgba(255,255,255,.65);margin-top:.38rem;font-weight:300}
 .btn-wa-inv{
@@ -903,8 +903,8 @@ ul,ol{list-style:none}
 .testi-stars{display:flex;gap:2px;margin-bottom:1.1rem}
 .testi-stars svg{color:#F59E0B}
 .testi-quote{
-  font-size:.88rem;color:var(--ink-3);line-height:1.72;
-  font-weight:300;font-style:italic;flex:1;
+  font-size:.88rem;color:var(--ink-3);line-height:1.75;
+  font-weight:400;font-style:normal;flex:1;
   border-left:3px solid var(--lime);padding-left:.95rem;
 }
 .testi-author{
@@ -981,7 +981,7 @@ ul,ol{list-style:none}
   width:100%;display:flex;align-items:center;justify-content:space-between;
   gap:1rem;padding:1.08rem 1.35rem;text-align:left;cursor:pointer;
   font-family:var(--f-sans);font-size:.88rem;font-weight:600;
-  color:var(--ink);letter-spacing:-.01em;transition:color .18s;
+  color:var(--ink);letter-spacing:-.02em;transition:color .18s;
   background:none;border:none;
 }
 .faq-q:hover{color:var(--forest-mid)}
@@ -1187,11 +1187,11 @@ ul,ol{list-style:none}
 .section-head .display{
   font-family:var(--f-serif);
   font-size:clamp(2rem,4vw,3.2rem);
-  font-weight:400;letter-spacing:-.03em;line-height:1.08;
+  font-weight:800;letter-spacing:-.05em;line-height:1.02;
   color:var(--ink);margin-top:.6rem;
 }
-.section-head .display em{font-style:italic;color:var(--lime-mid)}
-.section-head .display strong{font-style:normal;font-weight:800}
+.section-head .display em{font-style:normal;font-weight:300;color:var(--lime-mid);letter-spacing:-.03em}
+.section-head .display strong{font-style:normal;font-weight:900}
 .section-head p{
   font-size:.98rem;color:var(--stone);font-weight:300;
   line-height:1.72;max-width:540px;margin-top:.7rem;
@@ -2311,7 +2311,7 @@ ul,ol{list-style:none}
       <!-- LEFT: copy -->
       <div>
         <div class="reveal"><span class="eyebrow">Nuestra trayectoria</span></div>
-        <h2 id="confianza-titulo" class="reveal d1" style="font-family:var(--f-serif);font-size:clamp(2rem,4vw,3.2rem);font-weight:400;letter-spacing:-.03em;line-height:1.08;color:var(--ink);margin-top:.6rem">
+        <h2 id="confianza-titulo" class="reveal d1" style="font-family:var(--f-serif);font-size:clamp(2rem,4vw,3.2rem);font-weight:800;letter-spacing:-.05em;line-height:1.02;color:var(--ink);margin-top:.6rem">
           17 años <em>instalando jardines</em><br>en México
         </h2>
         <p class="reveal d2" style="font-size:.98rem;color:var(--ink-4);font-weight:300;line-height:1.72;margin-top:.8rem;max-width:480px">
@@ -2424,7 +2424,7 @@ ul,ol{list-style:none}
     <div class="gallery-header">
       <div class="reveal">
         <span class="eyebrow">Proyectos realizados</span>
-        <h2 id="proyectos-titulo" class="display" style="font-family:var(--f-serif);font-size:clamp(2rem,4vw,3.2rem);font-weight:400;letter-spacing:-.03em;line-height:1.08;color:var(--ink);margin-top:.6rem">
+        <h2 id="proyectos-titulo" class="display" style="font-family:var(--f-serif);font-size:clamp(2rem,4vw,3.2rem);font-weight:800;letter-spacing:-.05em;line-height:1.02;color:var(--ink);margin-top:.6rem">
           Resultados reales de <em>nuestros clientes</em>
         </h2>
       </div>
@@ -2565,7 +2565,7 @@ ul,ol{list-style:none}
   <div class="wrap">
     <div class="section-head center reveal">
       <span class="eyebrow">Historias de éxito</span>
-      <h2 id="testimonios-titulo" class="display" style="font-family:var(--f-serif);font-size:clamp(2rem,4vw,3rem);font-weight:400;letter-spacing:-.03em;line-height:1.08;color:var(--ink);margin-top:.6rem">
+      <h2 id="testimonios-titulo" class="display" style="font-family:var(--f-serif);font-size:clamp(2rem,4vw,3rem);font-weight:800;letter-spacing:-.05em;line-height:1.02;color:var(--ink);margin-top:.6rem">
         Lo que dicen nuestros <em>clientes</em>
       </h2>
       <p style="font-size:.98rem;color:var(--stone);font-weight:300;line-height:1.72;margin-top:.7rem">Más de 5,000 familias y empresas en toda la República confían en EasyGarden.</p>
@@ -2911,7 +2911,7 @@ ul,ol{list-style:none}
           <span class="urgencia-dot"></span>
           <span>Esta semana: <strong>instalación express en 1 día</strong> en pedidos antes del viernes</span>
         </div>
-        <h2 id="contacto-titulo" class="display reveal d1" style="font-family:var(--f-serif);font-size:clamp(2rem,4vw,3.2rem);font-weight:400;letter-spacing:-.03em;line-height:1.08;color:var(--ink);margin-top:.6rem">
+        <h2 id="contacto-titulo" class="display reveal d1" style="font-family:var(--f-serif);font-size:clamp(2rem,4vw,3.2rem);font-weight:800;letter-spacing:-.05em;line-height:1.02;color:var(--ink);margin-top:.6rem">
           Transforma tu jardín <em>hoy mismo</em>
         </h2>
         <p class="reveal d2" style="font-size:.98rem;color:var(--stone);font-weight:300;line-height:1.72;margin-top:.7rem;max-width:480px">
