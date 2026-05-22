@@ -814,6 +814,79 @@ ul,ol{list-style:none}
   content:'';position:absolute;inset:0;
   background:linear-gradient(to bottom,var(--ink) 0%,transparent 30%,transparent 70%,rgba(27,47,21,.55) 100%);
 }
+/* ── Photo card premium (reemplaza cert-card negro) ── */
+.photo-card{
+  position:relative;border-radius:24px;overflow:hidden;
+  box-shadow:0 24px 64px rgba(0,0,0,.18);
+  aspect-ratio:4/5;
+  min-height:460px;
+}
+.photo-card-img{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;object-position:center 30%;
+  transition:transform .8s ease;
+  filter:brightness(1.05) saturate(1.1);
+}
+.photo-card:hover .photo-card-img{transform:scale(1.03)}
+.photo-card-fade{
+  position:absolute;inset:0;
+  background:linear-gradient(
+    to bottom,
+    rgba(0,0,0,.05) 0%,
+    transparent 35%,
+    transparent 55%,
+    rgba(0,0,0,.55) 100%
+  );
+  pointer-events:none;
+}
+/* Stats row — glassmorphism chips arriba */
+.photo-card-stats{
+  position:absolute;top:1.25rem;left:1.25rem;right:1.25rem;
+  display:flex;gap:.6rem;z-index:2;
+}
+.pcs{
+  flex:1;
+  background:rgba(255,255,255,.88);
+  backdrop-filter:blur(16px) saturate(1.5);
+  -webkit-backdrop-filter:blur(16px) saturate(1.5);
+  border-radius:14px;padding:.75rem .5rem .65rem;
+  text-align:center;
+  border:1px solid rgba(255,255,255,.7);
+  box-shadow:0 2px 12px rgba(0,0,0,.1);
+}
+.pcs-val{
+  font-family:var(--f-serif);font-size:1.3rem;font-weight:900;
+  color:var(--ink);letter-spacing:-.05em;line-height:1;
+}
+.pcs-val span{color:var(--lime-mid);font-size:1rem}
+.pcs-lbl{font-size:.6rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--stone);margin-top:.25rem}
+/* Bottom CTA */
+.photo-card-bottom{
+  position:absolute;bottom:1.5rem;left:1.5rem;right:1.5rem;
+  z-index:2;display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  flex-wrap:wrap;
+}
+.photo-card-loc{
+  display:flex;align-items:center;gap:.35rem;
+  font-size:.72rem;font-weight:500;color:rgba(255,255,255,.85);
+  letter-spacing:.02em;
+}
+.photo-card-cta{
+  display:inline-flex;align-items:center;
+  background:#fff;color:var(--ink);
+  font-family:var(--f-sans);font-size:.82rem;font-weight:700;
+  padding:.65rem 1.25rem;border-radius:100px;
+  text-decoration:none;letter-spacing:-.01em;
+  box-shadow:0 4px 16px rgba(0,0,0,.18);
+  transition:background .2s,transform .2s,box-shadow .2s;
+  white-space:nowrap;
+}
+.photo-card-cta:hover{
+  background:var(--lime);color:#fff;
+  transform:translateY(-2px);
+  box-shadow:0 8px 24px rgba(124,197,66,.45);
+}
+
 .cert-footer{
   padding:1rem 1.8rem 1.5rem;position:relative;z-index:1;
   display:flex;align-items:center;justify-content:space-between;
@@ -2366,48 +2439,48 @@ ul,ol{list-style:none}
         </div>
       </div>
 
-      <!-- RIGHT: credenciales card (dark) -->
+      <!-- RIGHT: photo card premium -->
       <div class="reveal d2">
-        <div class="cert-card" role="img" aria-label="Credenciales EasyGarden — 17 años instalando pasto sintético en México">
-          <div class="cert-header">
-            <div class="cert-top">
-              <span class="wm wm-dark" style="font-size:.95rem">
-                <span class="wm-easy">Easy</span><span class="wm-garden">Garden</span>
-              </span>
-              <div class="cert-badge">
-                <div class="cert-badge-dot" aria-hidden="true"></div>
-                <span class="cert-badge-txt">Desde 2008 en México</span>
-              </div>
+        <div class="photo-card" role="img" aria-label="Jardín residencial con pasto sintético EasyGarden">
+
+          <!-- Foto full bleed -->
+          <img src="images/galeria-hacienda.jpg"
+               class="photo-card-img"
+               alt="Jardín estilo hacienda con pasto sintético EasyGarden — acabado premium"
+               loading="lazy" width="1200" height="900">
+
+          <!-- Gradient bottom suave -->
+          <div class="photo-card-fade"></div>
+
+          <!-- Stats flotantes arriba -->
+          <div class="photo-card-stats" role="list" aria-label="Credenciales EasyGarden">
+            <div class="pcs" role="listitem">
+              <div class="pcs-val">5K<span>+</span></div>
+              <div class="pcs-lbl">Proyectos</div>
             </div>
-            <div class="cert-label">Empresa mexicana de pasto sintético</div>
-            <div class="cert-title">17 años <em>enverdeciendo</em><br>México</div>
-          </div>
-          <div class="cert-stats" role="list" aria-label="Estadísticas de EasyGarden">
-            <div class="cert-stat" role="listitem">
-              <div class="cert-stat-val">5K<em>+</em></div>
-              <div class="cert-stat-lbl">Proyectos</div>
+            <div class="pcs" role="listitem">
+              <div class="pcs-val">9<span>a</span></div>
+              <div class="pcs-lbl">Garantía</div>
             </div>
-            <div class="cert-stat" role="listitem">
-              <div class="cert-stat-val">9<em>a</em></div>
-              <div class="cert-stat-lbl">Garantía máx.</div>
-            </div>
-            <div class="cert-stat" role="listitem">
-              <div class="cert-stat-val">4.9<em>★</em></div>
-              <div class="cert-stat-lbl">Google</div>
+            <div class="pcs" role="listitem">
+              <div class="pcs-val">4.9<span>★</span></div>
+              <div class="pcs-lbl">Google</div>
             </div>
           </div>
-          <div class="cert-photo" aria-hidden="true">
-            <img src="images/galeria-residencial-alberca.jpg"
-                 alt="Jardín residencial premium con pasto sintético EasyGarden — alberca y perro golden retriever"
-                 loading="lazy" width="1204" height="700">
-          </div>
-          <div class="cert-footer">
-            <span class="cert-footer-txt">Monterrey, Nuevo León &middot; México</span>
-            <div class="cert-verified">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-              17 años de experiencia
+
+          <!-- CTA flotante abajo -->
+          <div class="photo-card-bottom">
+            <div class="photo-card-loc">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Monterrey · CDMX · GDL · Todo México
             </div>
+            <a href="https://wa.me/528142979309?text=Hola%2C%20quiero%20ver%20opciones%20de%20pasto%20sint%C3%A9tico"
+               target="_blank" rel="noopener noreferrer"
+               class="photo-card-cta">
+              Ver mis opciones →
+            </a>
           </div>
+
         </div>
       </div>
 
